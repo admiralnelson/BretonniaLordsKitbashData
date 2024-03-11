@@ -14,6 +14,9 @@
     "luaTarget": "5.1",
     "sourceMapTraceback": true,
     "luaLibImport": "inline",
+    "noResolvePaths": [
+      "header/*d.ts"
+    ],
   },
   "include": [
     "**/__tests__/**/*.ts",  

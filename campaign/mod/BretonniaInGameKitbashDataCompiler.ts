@@ -4,15 +4,19 @@ namespace BretonniaInGameKitbashDataCompiler {
 
     export class YourEntryPoint {
 
-        private Init(): void {
-            console.log("Hello world, I'm compiled from Typescript project!")
-            setTimeout(() => {
-                alert(`Hello world`)
-            }, 1000)
-        }
-
         constructor() {
-            OnCampaignStart( () => this.Init() )
+            BretonniaInGameKitbash.KitbashedCharacter.Register(
+                "wh_main_brt_louen_leoncouer", {
+                possibleMounts: {
+                    "kitbasher_horse_louen_base": "wh_main_anc_mount_brt_louen_barded_warhorse",
+                    "kitbasher_pegasus_louen_base": "wh_main_anc_mount_brt_louen_royal_pegasus",
+                    "kitbasher_beaquis_louen_base": "wh_main_anc_mount_brt_louen_beaquis",
+                },
+                specialItems : {
+                    
+                },
+                defaultArmorySet: "admiralnelson_armory_louen_leonceour_basic"
+            })
         }
     }
     
