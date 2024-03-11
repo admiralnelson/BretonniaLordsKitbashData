@@ -17,6 +17,8 @@ namespace BretonniaInGameKitbashDataCompiler {
                 },
                 defaultArmorySet: "admiralnelson_armory_louen_leonceour_basic"
             })
+
+            BretonniaInGameKitbash.KitbashedCharacter.EnableFaction("wh_main_brt_bretonnia")
         }
     }
     
