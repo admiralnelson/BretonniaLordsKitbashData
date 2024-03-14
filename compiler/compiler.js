@@ -244,12 +244,33 @@ function CheckForDefaultSets() {
 
 }
 
+/**
+ * variant mesh check
+ */
+
+function CheckForVariantMesh() {
+    let errored = false
+    for (let item of ArmouryDefs) {
+
+        if (item["Type"] !== "mount" && 
+            item["Type"] !== "talisman" && 
+            item["Type"] !== "cape" && 
+            item["VariantMesh"] == null) {
+            console.warn(`Item ${item["ItemName"]} of type ${item["Type"]} has null VariantMesh.`);
+            errored = true
+        }
+    }
+
+    if(errored) throw "found null VariantMeshes"
+}
+
 CheckForDuplicateSubtypeKey()
 CheckForDuplicateItemName()
 CheckForInvalidTypes()
 CheckForIconsPath()
 CheckForThumbnailPath()
 CheckForDefaultSets()
+CheckForVariantMesh()
 
 /**
  * Compiling the tables....
@@ -850,6 +871,65 @@ console.log(GenerateDummyVariants())
 /**
  * TODO: Generate variantmesh also!
  */
+
+function ClearDirectory() {
+    let dir = path.join('..', 'build', 'intermediate')
+
+    if (fs.existsSync(dir)) {
+        fs.readdirSync(dir).forEach((file) => {
+            let filePath = path.join(dir, file)
+            fs.unlinkSync(filePath)
+        })
+    }
+}
+
+function GenerateVariantMesh() {
+    
+    // Define the mapping for the part names and attach points
+    const partMapping = {
+        "cape": "left_arm",
+        "talisman": "tail",
+        "mount": "right_arm",
+        "1handed": "weapon_2",
+        "2handed": "weapon_1"
+    }
+    const attachPointMapping = {
+        "1handed": 'attach_point="be_prop_1"',
+        "2handed": 'attach_point="be_prop_0"',
+        "shield": 'attach_point="be_prop_2"'
+    }
+
+    let dir = path.join('build', 'intermediate')
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+
+    let count = 0;
+    const spinner = ['|', '/', '-', '\\']
+
+    for (let item of ArmouryDefs) {
+        let part = partMapping[item["Type"]] || item["Type"];
+        let attachPoint = attachPointMapping[item["Type"]] || ""
+
+        let xml = `<VARIANT_MESH>\n`
+        xml += `    <SLOT name="${part}" ${attachPoint}>\n`
+        xml += `        <VARIANT_MESH model="${item["VariantMesh"]}">\n`
+        xml += `            <META_DATA>${item["AudioType"] ?? ""}</META_DATA>\n`
+        xml += `        </VARIANT_MESH>\n`
+        xml += `    </SLOT>\n`
+        xml += `</VARIANT_MESH>`
+
+        fs.writeFileSync(path.join('build', 'intermediate', `${item["ItemName"]}.variantmeshdefinition`), xml)
+        
+        count++
+        process.stdout.write(`\r Processing ${spinner[count % spinner.length]} ${count} / ${ArmouryDefs.length}`)
+    }
+
+    process.stdout.write('\n')
+}
+
+ClearDirectory()
+GenerateVariantMesh()
 
 /**
  * TODO: Place the icons too!
