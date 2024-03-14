@@ -179,7 +179,7 @@ function CheckForThumbnailPath() {
  * Check if Icon points to valid pngs
  */
 
-function CheckForThumbnailPath() {
+function CheckForIconsPath() {
     let errored = false
     for (const def of ArmouryDefs) {
 
@@ -197,6 +197,12 @@ function CheckForThumbnailPath() {
             continue
         }
 
+        const filename = path.basename(icon, ".png")
+        if(filename != def.ItemName) {
+            console.log(`File name does not match with ItemName: ${icon}, ItemName is ${def.ItemName}`)
+            errored = true
+        }
+
     }
 
     if(errored) throw "found invalid icons"
@@ -206,13 +212,44 @@ function CheckForThumbnailPath() {
  * Ensure that default sets have cape, talisman, head, torso, legs, shield, 1handed, (or 2handed), (or mount)
  */
 function CheckForDefaultSets() {
+    let transformedData = {};
+
+    for (let item of ArmouryDefs) {
+        let armourySet = item["AssociatedWithArmouryItemSet"]
+
+        if(!armourySet) continue
+        
+        if (!(armourySet in transformedData)) {
+            transformedData[armourySet] = {}
+        }
+        
+        transformedData[armourySet][item["Type"]] = item
+    }
+
+    let errored = false
+    for (let armourySet in transformedData) {
+        if (("1handed" in transformedData[armourySet] || "shield" in transformedData[armourySet]) && "2handed" in transformedData[armourySet]) {
+            console.warn(`Conflict in ${armourySet}: both 1handed/shield and 2handed types are present.`)
+            errored = true
+        }
+
+        if (!("head" in transformedData[armourySet] && 
+              "torso" in transformedData[armourySet] )) {
+            console.warn(`In ${armourySet}: both head and torso must be present.`)
+            errored = true
+        }
+    }
+
+    if(errored) throw "found conflicting/problematic default armour sets"
 
 }
 
 CheckForDuplicateSubtypeKey()
 CheckForDuplicateItemName()
 CheckForInvalidTypes()
+CheckForIconsPath()
 CheckForThumbnailPath()
+CheckForDefaultSets()
 
 /**
  * Compiling the tables....

@@ -37,9 +37,10 @@
         "BattleAnimation": null,
         "//": "CampaignAnimation, it will override the agent campaign animation IF this item is equipped, can be set to null if not being used",
         "CampaignAnimation": null,
-        "//": "Only compatible with this item, set null if not being used",
+        "//": "Only compatible with these items, set null if not being used",
         "//": "The item will be hidden (in implementation we actually remove and add it behind the scene) if a certain item is not being equipped",
         "//": "Typical use case: 2handed sword when riding a mount, and the mount animation is being overriden from the weapon animation",
+        "//": "Compatible with following items, [ "horse", "pegaus" ]
         "OnlyCompatibleWithItem": null
     }
 ]
