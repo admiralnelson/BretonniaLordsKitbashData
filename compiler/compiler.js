@@ -113,6 +113,36 @@ function CheckForDuplicateSubtypeKey() {
     }
 }
 
+function CheckForInvalidTypes() {
+    let errored = false
+    for (const def of ArmouryDefs) {
+        const types = ["cape", "talisman", "head", "torso", "legs", "shield", "1handed", "2handed", "mount"]
+        if(!types.includes(def.Type)) {
+            console.log(`Invalid type: ${def.Type} in item ${def.ItemName}`)
+            errored = true
+        }
+        
+    }
+
+    if(errored) throw "found invalid types"
+}
+
+/**
+ * Runs check against ArmouryDefs
+ * If found another same ItemName, it throws an exception
+ */
+function CheckForDuplicateItemName() {
+    const seen = new Set();
+
+    for (const object of ArmouryDefs) {
+        if (seen.has(object.ItemName)) {
+            throw new Error(`Duplicate ItemName found: ${object.ItemName}`);
+        }
+        seen.add(object.ItemName);
+    }
+}
+
+
 /**
  * Ensure that thumbnails defined in the ArmouryDef are valid
  */
@@ -121,16 +151,23 @@ function CheckForThumbnailPath() {
     let errored = false
     for (const def of ArmouryDefs) {
         if(def.Type != "head") continue
-        
+
         const thumbnailPath = path.isAbsolute(def.Thumbnail) ? def.Thumbnail : path.join(__dirname, '..', def.Thumbnail)
         const unitCardThumbnailPath = path.isAbsolute(def.UnitCardThumbnail) ? def.UnitCardThumbnail : path.join(__dirname, '..', def.UnitCardThumbnail)
 
         if (!fs.existsSync(thumbnailPath) || path.extname(thumbnailPath) !== '.png') {
             console.log(`Invalid Thumbnail: ${thumbnailPath}`)
             errored = true
+            continue
         }
         if (!fs.existsSync(unitCardThumbnailPath) || path.extname(unitCardThumbnailPath) !== '.png') {
             console.log(`Invalid Unit Card Thumbnail: ${unitCardThumbnailPath}`)
+            errored = true
+            continue
+        }
+        const filename = path.basename(unitCardThumbnailPath, ".png")
+        if(filename != def.ItemName) {
+            console.log(`File name does not match with ItemName: ${unitCardThumbnailPath}, ItemName is ${def.ItemName}`)
             errored = true
         }
     }
@@ -138,8 +175,43 @@ function CheckForThumbnailPath() {
     if(errored) throw "found invalid thumbnail"
 }
 
+/**
+ * Check if Icon points to valid pngs
+ */
+
+function CheckForThumbnailPath() {
+    let errored = false
+    for (const def of ArmouryDefs) {
+
+        if(!def.UiIcon) {
+            console.log(`No icon: ${def.ItemName}`)
+            errored = true
+            continue
+        }
+
+        const icon = path.isAbsolute(def.UiIcon) ? def.UiIcon : path.join(__dirname, '..', def.UiIcon)
+
+        if (!fs.existsSync(icon) || path.extname(icon) !== '.png') {
+            console.log(`Invalid icon: ${icon}`)
+            errored = true
+            continue
+        }
+
+    }
+
+    if(errored) throw "found invalid icons"
+}
+
+/**
+ * Ensure that default sets have cape, talisman, head, torso, legs, shield, 1handed, (or 2handed), (or mount)
+ */
+function CheckForDefaultSets() {
+
+}
 
 CheckForDuplicateSubtypeKey()
+CheckForDuplicateItemName()
+CheckForInvalidTypes()
 CheckForThumbnailPath()
 
 /**
@@ -738,7 +810,12 @@ console.log(GenerateDummyBattleSkeletonParts())
 console.log(GenerateVariants())
 console.log(GenerateDummyVariants())
 
+/**
+ * TODO: Generate variantmesh also!
+ */
 
-
+/**
+ * TODO: Place the icons too!
+ */
 
 
