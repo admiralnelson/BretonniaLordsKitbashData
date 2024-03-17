@@ -1,6 +1,10 @@
 const fs = require('fs')
 const path = require('path')
 
+if (process.argv.includes('--clean')) {
+    ClearDirectory()
+    return
+} 
 
 /**
  * Reads *.json and parses it then concatenate it as big array
@@ -873,7 +877,7 @@ console.log(GenerateDummyVariants())
  */
 
 function ClearDirectory() {
-    let dir = path.join('..', 'build', 'intermediate')
+    let dir = path.join('build', 'intermediate')
 
     if (fs.existsSync(dir)) {
         fs.readdirSync(dir).forEach((file) => {
@@ -930,6 +934,8 @@ function GenerateVariantMesh() {
 
 ClearDirectory()
 GenerateVariantMesh()
+
+
 
 /**
  * TODO: Place the icons too!
