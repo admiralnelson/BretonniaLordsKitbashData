@@ -1246,7 +1246,7 @@ function CopyIcons() {
     }
 
 
-    for (const item of ArmouryData) {
+    for (const item of ArmouryDefs) {
         const uiIcon = item.UiIcon
 
         if(!uiIcon) continue
