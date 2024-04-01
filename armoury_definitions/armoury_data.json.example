@@ -41,6 +41,9 @@
         "//": "The item will be hidden (in implementation we actually remove and add it behind the scene) if a certain item is not being equipped",
         "//": "Typical use case: 2handed sword when riding a mount, and the mount animation is being overriden from the weapon animation",
         "//": "Compatible with following items, [ "horse", "pegaus" ]
-        "OnlyCompatibleWithItem": null
+        "OnlyCompatibleWithItem": null,
+        "//": "Audio sound effects on the variantmeshes",
+        "//": "Can be set to null if there isnt any",
+        "AudioType": null
     }
 ]

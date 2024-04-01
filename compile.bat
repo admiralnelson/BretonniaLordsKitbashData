@@ -1,1 +1,1 @@
-node.exe compiler/compiler.js
+node.exe compiler/compiler.js --project LouenArmoury

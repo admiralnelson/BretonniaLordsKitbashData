@@ -17,7 +17,8 @@
         "VariantMeshMountScale": 1,
         "BattleAnimation": null,
         "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null
     },
     {
         "ItemName": "kitbasher_talisman_none",
@@ -37,7 +38,8 @@
         "VariantMeshMountScale": 1,
         "BattleAnimation": null,
         "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null
     },
     {
         "ItemName": "kitbasher_head_louen_base",
@@ -57,7 +59,8 @@
         "VariantMeshMountScale": 1,
         "BattleAnimation": null,
         "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null
         
     },
     {
@@ -78,7 +81,8 @@
         "VariantMeshMountScale": 1,
         "BattleAnimation": null,
         "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null
 
     },
     {
@@ -99,7 +103,8 @@
         "VariantMeshMountScale": 1,
         "BattleAnimation": null,
         "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null
 
     },
     {
@@ -120,7 +125,8 @@
         "VariantMeshMountScale": 1,
         "BattleAnimation": null,
         "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null
 
     },
     {
@@ -141,7 +147,8 @@
         "VariantMeshMountScale": 1,
         "BattleAnimation": null,
         "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null
 
     }
 ]

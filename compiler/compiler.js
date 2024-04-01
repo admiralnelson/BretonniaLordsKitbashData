@@ -6,6 +6,22 @@ if (process.argv.includes('--clean')) {
     return
 } 
 
+let PROJECT_NAME = ""
+
+const args = process.argv
+for(let i = 0; i < args.length; i++) {
+    if(args[i] === '--project') {
+        PROJECT_NAME = args[i + 1];
+        break;
+    }
+}
+
+if(PROJECT_NAME == "") {
+    console.error("--project is not defined")
+    return 1
+}
+
+
 /**
  * Reads *.json and parses it then concatenate it as big array
  * @returns {Array<object>}
@@ -42,7 +58,8 @@ function ReadArmouryDefinitions() {
                 "AssociatedAncillaryKey",
                 "BattleAnimation",
                 "CampaignAnimation",
-                "OnlyCompatibleWithItem"
+                "OnlyCompatibleWithItem",
+                "AudioType"
             ]
             keys.forEach(key => {
                 if (!(key in object)) {
@@ -268,6 +285,7 @@ function CheckForVariantMesh() {
     if(errored) throw "found null VariantMeshes"
 }
 
+console.log("Validating data")
 CheckForDuplicateSubtypeKey()
 CheckForDuplicateItemName()
 CheckForInvalidTypes()
@@ -275,6 +293,8 @@ CheckForIconsPath()
 CheckForThumbnailPath()
 CheckForDefaultSets()
 CheckForVariantMesh()
+console.log("Data validated")
+
 
 /**
  * Compiling the tables....
@@ -284,11 +304,11 @@ CheckForVariantMesh()
  * Generate agent_subtypes_to_armory_item_sets_tables
  * @returns {Array<object>}
  */
-function GenerateArmouryItemSet() {
+function GenerateArmoryAgentSubtypesToArmoryItemSets() {
     const output = []
     for (const armoury of ArmouryData) {
         output.push({
-            armoury_item_set: armoury.DefaultArmoryItemSet,
+            armory_item_set: armoury.DefaultArmoryItemSet,
             agent_subtype: armoury.SubtypeKey
         })
     }
@@ -310,8 +330,8 @@ function GenerateArmoryItemSetItems() {
             }
 
             output.push({
-                armoury_item: armourDef.ItemName,
-                armoury_item_set: armoury.DefaultArmoryItemSet
+                armory_item: armourDef.ItemName,
+                armory_item_set: armoury.DefaultArmoryItemSet
             })
         }
     }
@@ -327,16 +347,16 @@ function GenerateDummyArmoryItemSetItems() {
     const output = []
     for (const armoury of ArmouryData) {
         output.push({
-            armoury_item: `const_kitbasher_dummy_arm_left__${armoury.Skeleton}`,
-            armoury_item_set: armoury.DefaultArmoryItemSet
+            armory_item: `const_kitbasher_dummy_arm_left__${armoury.Skeleton}`,
+            armory_item_set: armoury.DefaultArmoryItemSet
         })
         output.push({
-            armoury_item: `const_kitbasher_dummy_arm_right__${armoury.Skeleton}`,
-            armoury_item_set: armoury.DefaultArmoryItemSet
+            armory_item: `const_kitbasher_dummy_arm_right__${armoury.Skeleton}`,
+            armory_item_set: armoury.DefaultArmoryItemSet
         })
         output.push({
-            armoury_item: `const_kitbasher_dummy_wings__${armoury.Skeleton}`,
-            armoury_item_set: armoury.DefaultArmoryItemSet
+            armory_item: `const_kitbasher_dummy_wings__${armoury.Skeleton}`,
+            armory_item_set: armoury.DefaultArmoryItemSet
         })
     }
 
@@ -440,7 +460,7 @@ function GenerateArmoryItemToCategorySets() {
  * Generate armory_item_to_category_sets_tables but dummy (use case for no mounts)
  * @returns {Array<object>}
  */
-function GenerateDummyArmoryItemSlotBlacklists() {
+function GenerateDummyArmoryItemToCategorySets() {
     const seen = new Set();
 
     for (const object of ArmouryData) {
@@ -452,15 +472,15 @@ function GenerateDummyArmoryItemSlotBlacklists() {
     const output = []
     for (const skeleton of Skeletons) {
         output.push({
-            armoury_item: `const_kitbasher_dummy_arm_left__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_arm_left__${skeleton}`,
             category_set: "generic"
         })
         output.push({
-            armoury_item: `const_kitbasher_dummy_arm_right__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_arm_right__${skeleton}`,
             category_set: "generic"
         })
         output.push({
-            armoury_item: `const_kitbasher_dummy_wings__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_wings__${skeleton}`,
             category_set: "generic"
         })
     }
@@ -513,15 +533,15 @@ function GenerateDummyArmoryItemUiInfos() {
     const output = []
     for (const skeleton of Skeletons) {
         output.push({
-            armoury_item: `const_kitbasher_dummy_arm_left__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_arm_left__${skeleton}`,
             type: "const_kitbasher_50_common"
         })
         output.push({
-            armoury_item: `const_kitbasher_dummy_arm_right__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_arm_right__${skeleton}`,
             type: "const_kitbasher_50_common"
         })
         output.push({
-            armoury_item: `const_kitbasher_dummy_wings__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_wings__${skeleton}`,
             type: "const_kitbasher_50_common"
         })
     }
@@ -580,10 +600,10 @@ function GenerateArmoryItemVariants() {
             case "mount":
             case "shield":
                 output.push({
-                    armoury_item: def.ItemName,
+                    armory_item: def.ItemName,
                     variant: def.ItemName,
-                    battle_animation: null,
-                    campaign_animation: null,
+                    battle_animation: "",
+                    campaign_animation: "",
                     use_as_default: true,
                     ui_info: def.ItemName
                 })
@@ -591,7 +611,7 @@ function GenerateArmoryItemVariants() {
             case "1handed":
             case "2handed":
                 output.push({
-                    armoury_item: def.ItemName,
+                    armory_item: def.ItemName,
                     variant: def.ItemName,
                     battle_animation: def.BattleAnimation,
                     campaign_animation: def.CampaignAnimation,
@@ -620,34 +640,34 @@ function GenerateDummyArmoryItemVariants() {
     const output = []
     for (const skeleton of Skeletons) {
         output.push({
-            armoury_item: `const_kitbasher_dummy_arm_left__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_arm_left__${skeleton}`,
             variant: `const_kitbasher_dummy_arm_left__${skeleton}`,
-            battle_animation: null,
-            campaign_animation: null,
+            battle_animation: "",
+            campaign_animation: "",
             use_as_default: true,
             ui_info: `const_kitbasher_dummy_arm_left__${skeleton}`
         })
         output.push({
-            armoury_item: `const_kitbasher_dummy_arm_right__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_arm_right__${skeleton}`,
             variant: `const_kitbasher_dummy_arm_right__${skeleton}`,
-            battle_animation: null,
-            campaign_animation: null,
+            battle_animation: "",
+            campaign_animation: "",
             use_as_default: true,
             ui_info: `const_kitbasher_dummy_arm_right__${skeleton}`,
         })
         output.push({
-            armoury_item: `const_kitbasher_dummy_wings__${skeleton}`,
+            armory_item: `const_kitbasher_dummy_wings__${skeleton}`,
             variant: `const_kitbasher_dummy_wings__${skeleton}`,
-            battle_animation: null,
-            campaign_animation: null,
+            battle_animation: "",
+            campaign_animation: "",
             use_as_default: true,
             ui_info: `const_kitbasher_dummy_wings__${skeleton}`,
         })
         output.push({
-            armoury_item:  `const_kitbasher_dummy_tail__${skeleton}`,
+            armory_item:  `const_kitbasher_dummy_tail__${skeleton}`,
             variant: `const_kitbasher_dummy_tail__${skeleton}`,
-            battle_animation: null,
-            campaign_animation: null,
+            battle_animation: "",
+            campaign_animation: "",
             use_as_default: true,
             ui_info: `const_kitbasher_dummy_tail__${skeleton}`,
         })
@@ -793,7 +813,7 @@ function GenerateVariants() {
 
         output.push({
             variant_name: def.ItemName,
-            tech_folder: null,
+            tech_folder: "",
             variant_filename: def.VariantMesh,
             mount_scale: variantMeshPath,
             scale: def.VariantMeshScale,
@@ -817,7 +837,7 @@ function GenerateDummyVariants() {
     for (const skeleton of Skeletons) {
         output.push({
             variant_name: `const_kitbasher_dummy_arm_left__${skeleton}`,
-            tech_folder: null,
+            tech_folder: "",
             variant_filename: "",
             mount_scale: 1,
             scale: 1,
@@ -825,7 +845,7 @@ function GenerateDummyVariants() {
         })
         output.push({
             variant_name: `const_kitbasher_dummy_arm_right__${skeleton}`,
-            tech_folder: null,
+            tech_folder: "",
             variant_filename: "",
             mount_scale: 1,
             scale: 1,
@@ -833,7 +853,7 @@ function GenerateDummyVariants() {
         })
         output.push({
             variant_name:  `const_kitbasher_dummy_tail__${skeleton}`,
-            tech_folder: null,
+            tech_folder: "",
             variant_filename: "",
             mount_scale: 1,
             scale: 1,
@@ -841,7 +861,7 @@ function GenerateDummyVariants() {
         })
         output.push({
             variant_name: `const_kitbasher_dummy_wings__${skeleton}`,
-            tech_folder: null,
+            tech_folder: "",
             variant_filename: "",
             mount_scale: 1,
             scale: 1,
@@ -852,38 +872,42 @@ function GenerateDummyVariants() {
     return output
 }
 
-console.log(GenerateArmouryItemSet())
-console.log(GenerateArmoryItemSetItems())
-console.log(GenerateDummyArmoryItemSetItems())
-console.log(GenerateArmoryItemSlotBlacklists())
-console.log(GenerateArmoryItemSets())
-console.log(GenerateArmoryItemToCategorySets())
-console.log(GenerateDummyArmoryItemSlotBlacklists())
-console.log(GenerateArmoryItemUiInfos())
-console.log(GenerateDummyArmoryItemUiInfos())
-console.log(GenerateArmoryItemVariantUiInfos())
-console.log(GenerateDummyArmoryItemVariantUiInfos())
-console.log(GenerateArmoryItemVariants())
-console.log(GenerateDummyArmoryItemVariants())
-console.log(GenerateArmoryItems())
-console.log(GenerateDummyArmoryItems())
-console.log(GenerateBattleSkeletonParts())
-console.log(GenerateDummyBattleSkeletonParts())
-console.log(GenerateVariants())
-console.log(GenerateDummyVariants())
+// console.log(GenerateArmoryAgentSubtypesToArmoryItemSets())
+// console.log(GenerateArmoryItemSetItems())
+// console.log(GenerateDummyArmoryItemSetItems())
+// console.log(GenerateArmoryItemSlotBlacklists())
+// console.log(GenerateArmoryItemSets())
+// console.log(GenerateArmoryItemToCategorySets())
+// console.log(GenerateDummyArmoryItemSlotBlacklists())
+// console.log(GenerateArmoryItemUiInfos())
+// console.log(GenerateDummyArmoryItemUiInfos())
+// console.log(GenerateArmoryItemVariantUiInfos())
+// console.log(GenerateDummyArmoryItemVariantUiInfos())
+// console.log(GenerateArmoryItemVariants())
+// console.log(GenerateDummyArmoryItemVariants())
+// console.log(GenerateArmoryItems())
+// console.log(GenerateDummyArmoryItems())
+// console.log(GenerateBattleSkeletonParts())
+// console.log(GenerateDummyBattleSkeletonParts())
+// console.log(GenerateVariants())
+// console.log(GenerateDummyVariants())
 
 /**
  * TODO: Generate variantmesh also!
  */
 
 function ClearDirectory() {
-    let dir = path.join('build', 'intermediate')
+    try {
+        let dir = path.join('build', 'intermediate')
 
-    if (fs.existsSync(dir)) {
-        fs.readdirSync(dir).forEach((file) => {
-            let filePath = path.join(dir, file)
-            fs.unlinkSync(filePath)
-        })
+        if (fs.existsSync(dir)) {
+            fs.readdirSync(dir).forEach((file) => {
+                let filePath = path.join(dir, file)
+                fs.unlinkSync(filePath)
+            })
+        }
+    } catch (error) {
+        
     }
 }
 
@@ -903,7 +927,7 @@ function GenerateVariantMesh() {
         "shield": 'attach_point="be_prop_2"'
     }
 
-    let dir = path.join('build', 'intermediate')
+    let dir = path.join('build', 'intermediate', "variantmeshes")
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
@@ -932,13 +956,305 @@ function GenerateVariantMesh() {
     process.stdout.write('\n')
 }
 
+console.log("Clean directory")
 ClearDirectory()
+
+console.log("Generating variant mesh")
 GenerateVariantMesh()
 
+function GenerateCsv_agent_subtypes_to_armory_item_sets_tables(data, projectName) {
 
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `armory_item_set	agent_subtype\n` +
+    `#agent_subtypes_to_armory_item_sets_tables;0;db/agent_subtypes_to_armory_item_sets_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.armory_item_set}	${item.agent_subtype}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "agent_uniforms_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_armory_item_set_items_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `armory_item	armory_item_set\n` +
+    `#armory_item_set_items_tables;0;db/armory_item_set_items_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.armory_item}	${item.armory_item_set}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "armory_item_set_items_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_armory_item_sets_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `key\n` +
+    `#armory_item_sets_tables;0;db/armory_item_sets_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.key}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "armory_item_sets_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_armory_item_slot_blacklists_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `armory_item	slot\n` +
+    `#armory_item_slot_blacklists_tables;0;db/armory_item_slot_blacklists_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.armory_item}	${item.slot}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "armory_item_slot_blacklists_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_armory_item_to_category_sets_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `armory_item	category_set\n` +
+    `#armory_item_to_category_sets_tables;0;db/armory_item_to_category_sets_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.armory_item}	${item.category_set}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "armory_item_to_category_sets_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_armory_item_ui_infos_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `armory_item	type\n` +
+    `#armory_item_ui_infos_tables;1;db/armory_item_ui_infos_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.armory_item}	${item.type}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "armory_item_ui_infos_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_armory_item_variant_ui_infos_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `key\n` +
+    `#armory_item_variant_ui_infos_tables;0;db/armory_item_variant_ui_infos_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.key}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "armory_item_variant_ui_infos_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_armory_item_variants_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `armory_item	variant	battle_animation	campaign_animation	use_as_default	ui_info\n` +
+    `#armory_item_variants_tables;0;db/armory_item_variants_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.armory_item}	${item.variant}	${item.battle_animation}	${item.campaign_animation}	${item.use_as_default}	${item.ui_info}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "armory_item_variants_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_armory_items_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `key	slot_type\n` +
+    `#armory_items_tables;0;db/armory_items_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.key}	${item.slot_type}\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "armory_items_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+
+function GenerateCsv_battle_skeleton_parts_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `variant_name	skeleton	root_joint\n` +
+    `#battle_skeleton_parts_tables;1;db/battle_skeleton_parts_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.variant_name}	${item.skeleton}		\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "battle_skeleton_parts_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+function GenerateCsv_variants_tables(data, projectName) {
+
+    const randomNumbering = Math.floor(Math.random() * 1000000)
+    const header = `variant_name	tech_folder	variant_filename	low_poly_filename	mount_scale	scale	scale_variation	super_low_poly_filename\n` +
+    `#variants_tables;6;db/variants_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
+
+    let out = ""
+    for (const item of data) {
+        out += `${item.variant_name}	${item.tech_folder}	${item.variant_filename}		${item.mount_scale}	${item.scale}	0	\n`
+    }
+
+    const result = (header + out).trim()
+    let dir = path.join('build', 'intermediate', "db", "variants_tables")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tsv = header + out
+    fs.writeFileSync(path.join(dir, tableName), tsv)
+}
+
+console.log("Processing agent_subtypes_to_armory_item_sets_tables")
+GenerateCsv_agent_subtypes_to_armory_item_sets_tables(GenerateArmoryAgentSubtypesToArmoryItemSets(), PROJECT_NAME)
+
+console.log("Processing armory_item_set_items_tables")
+GenerateCsv_armory_item_set_items_tables(GenerateArmoryItemSetItems(), PROJECT_NAME)
+GenerateCsv_armory_item_set_items_tables(GenerateDummyArmoryItemSetItems(), PROJECT_NAME + "_default")
+
+console.log("Processing armory_item_sets_tables")
+GenerateCsv_armory_item_sets_tables(GenerateArmoryItemSets(), PROJECT_NAME)
+
+console.log("Processing armory_item_slot_blacklists_tables")
+GenerateCsv_armory_item_slot_blacklists_tables(GenerateArmoryItemSlotBlacklists(), PROJECT_NAME)
+
+console.log("Processing armory_item_to_category_sets_tables")
+GenerateCsv_armory_item_to_category_sets_tables(GenerateArmoryItemToCategorySets(), PROJECT_NAME)
+GenerateCsv_armory_item_to_category_sets_tables(GenerateDummyArmoryItemToCategorySets(), PROJECT_NAME + "_default")
+
+console.log("Processing armory_item_ui_infos_tables")
+GenerateCsv_armory_item_ui_infos_tables(GenerateArmoryItemUiInfos(), PROJECT_NAME)
+GenerateCsv_armory_item_ui_infos_tables(GenerateDummyArmoryItemUiInfos(), PROJECT_NAME + "_default")
+
+console.log("Processing armory_item_variant_ui_infos_tables")
+GenerateCsv_armory_item_variant_ui_infos_tables(GenerateArmoryItemVariantUiInfos(), PROJECT_NAME)
+GenerateCsv_armory_item_variant_ui_infos_tables(GenerateDummyArmoryItemVariantUiInfos(), PROJECT_NAME  + "_default")
+
+console.log("Processing armory_item_variants_tables")
+GenerateCsv_armory_item_variants_tables(GenerateArmoryItemVariants(), PROJECT_NAME)
+GenerateCsv_armory_item_variants_tables(GenerateDummyArmoryItemVariants(), PROJECT_NAME + "_default")
+
+console.log("Processing armory_items_tables")
+GenerateCsv_armory_items_tables(GenerateArmoryItems(), PROJECT_NAME)
+GenerateCsv_armory_items_tables(GenerateDummyArmoryItems(), PROJECT_NAME + "_default")
+
+console.log("Processing battle_skeleton_parts_tables")
+GenerateCsv_battle_skeleton_parts_tables(GenerateBattleSkeletonParts(), PROJECT_NAME)
+GenerateCsv_battle_skeleton_parts_tables(GenerateDummyBattleSkeletonParts(), PROJECT_NAME + "_default")
+
+console.log("Processing variants_tables")
+GenerateCsv_variants_tables(GenerateVariants(), PROJECT_NAME)
+GenerateCsv_variants_tables(GenerateDummyVariants(), PROJECT_NAME + "_default")
 
 /**
  * TODO: Place the icons too!
  */
 
+function CopyIcons() {
+    let dir = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+
+
+    for (const item of ArmouryData) {
+        const uiIcon = item.UiIcon
+
+        if(!uiIcon) continue
+
+        fs.copyFileSync(uiIcon, dir)
+    }
+}
+
+console.log("Copying icons")
+CopyIcons()
 
