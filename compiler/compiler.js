@@ -1247,14 +1247,64 @@ function CopyIcons() {
 
 
     for (const item of ArmouryDefs) {
+        let dir = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons")
         const uiIcon = item.UiIcon
 
         if(!uiIcon) continue
 
-        fs.copyFileSync(uiIcon, dir)
+        const icon = path.isAbsolute(uiIcon) ? uiIcon : path.join(__dirname, '..', uiIcon)
+        dir = path.join(dir, path.basename(icon))
+
+        fs.copyFileSync(icon, dir)
+    }
+}
+
+function CopyPortholes() {
+    let dir = path.join('build', 'intermediate', "ui", "portraits", "portholes", "dae_prince")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+
+
+    for (const item of ArmouryDefs) {
+        let dir = path.join('build', 'intermediate', "ui", "portraits", "portholes", "dae_prince")
+        const porthole = item.Thumbnail
+        if(!porthole) continue
+
+
+        const picture = path.isAbsolute(porthole) ? porthole : path.join(__dirname, '..', porthole)
+        dir = path.join(dir, path.basename(picture))
+
+        fs.copyFileSync(porthole, dir)
+    }
+}
+
+function CopyCards() {
+    let dir = path.join('build', 'intermediate', "ui", "portraits", "units", "dae_prince")
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true })
+    }
+
+
+    for (const item of ArmouryDefs) {
+        let dir = path.join('build', 'intermediate', "ui", "portraits", "units", "dae_prince")
+        const porthole = item.UnitCardThumbnail
+        if(!porthole) continue
+
+        const picture = path.isAbsolute(porthole) ? porthole : path.join(__dirname, '..', porthole)
+        dir = path.join(dir, path.basename(picture))
+
+        fs.copyFileSync(porthole, dir)
     }
 }
 
 console.log("Copying icons")
 CopyIcons()
+
+console.log("Copying portholes")
+CopyPortholes()
+
+console.log("Copying cards")
+CopyCards()
+
 
