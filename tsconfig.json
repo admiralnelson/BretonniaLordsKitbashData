@@ -28,5 +28,10 @@
     "/battle/mod/**/*.ts", 
     "**/battle/mod/**/*.ts", 
     "/battle/mod/**/*.d.ts", 
-    "*.ts"]
+    "*.ts",
+    
+    "**/build/intermediate/ts/**/*.ts", 
+  
+  
+  ]
 }

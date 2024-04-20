@@ -21,6 +21,10 @@ if %ERRORLEVEL% NEQ 0 (
 robocopy script *.lua /s /V /XD .git script node_modules .vscode /XF *.ts > NUL
 mkdir script\_lib\mod 2> NUL
 
+exit /b 0
+
 :pause
 pause
+
+exit /b 1
 
