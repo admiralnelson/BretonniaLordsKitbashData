@@ -1358,6 +1358,42 @@ function CopyCards() {
     }
 }
 
+function InsertDummyAssets() {
+    const seen = new Set();
+
+    for (const object of ArmouryData) {
+        seen.add(object.Skeleton);
+    }
+
+    const Skeletons = Array.from(seen)
+    
+    const fileRequiredAssetName = path.join("required_assets", "transparent_wings.png")
+    const fileRequiredAssetName2 = path.join("required_assets", "transparent_wings2.png")
+    
+    const output = []
+    for (const skeleton of Skeletons) {
+        {
+            const dummyPortholeName = `const_kitbasher_dummy_wings__${skeleton}.png`
+            const dummyPortholeNameMask = `const_kitbasher_dummy_wings__${skeleton}_mask1.png`
+
+            const dest1 = path.join("build", "intermediate", "ui", "portraits", "portholes", "dae_prince", dummyPortholeName)
+            fs.copyFileSync(fileRequiredAssetName, dest1)
+            const dest2 = path.join("build", "intermediate", "ui", "portraits", "portholes", "dae_prince",  dummyPortholeNameMask)
+            fs.copyFileSync(fileRequiredAssetName, dest2)
+        }
+        
+        {
+            const dummyPortholeName = `const_kitbasher_dummy_wings__${skeleton}.png`
+            const dummyPortholeNameMask = `const_kitbasher_dummy_wings__${skeleton}_mask1.png`
+
+            const dest1 = path.join("build", "intermediate", "ui", "portraits", "units", "dae_prince", dummyPortholeName)
+            fs.copyFileSync(fileRequiredAssetName2, dest1)
+            const dest2 = path.join("build", "intermediate", "ui", "portraits", "units", "dae_prince",  dummyPortholeNameMask)
+            fs.copyFileSync(fileRequiredAssetName2, dest2)
+        }
+    }
+}
+
 console.log("Copying icons")
 CopyIcons()
 
@@ -1366,6 +1402,9 @@ CopyPortholes()
 
 console.log("Copying cards")
 CopyCards()
+
+console.log("Injecting dummy assets")
+InsertDummyAssets()
 
 function BuildScript() {
 
