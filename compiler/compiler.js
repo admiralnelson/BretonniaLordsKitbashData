@@ -1,3 +1,4 @@
+const { spawnSync, execSync } = require('child_process')
 const fs = require('fs')
 const path = require('path')
 
@@ -7,19 +8,44 @@ if (process.argv.includes('--clean')) {
 } 
 
 let PROJECT_NAME = ""
+let RPFM_EXE = ""
+let SCHEMA_PATH = ""
+let CLEAN_AFTER_COMPILE = false
 
 const args = process.argv
 for(let i = 0; i < args.length; i++) {
     if(args[i] === '--project') {
         PROJECT_NAME = args[i + 1];
-        break;
     }
+
+    if(args[i] === '--rpfm-path') {
+        RPFM_EXE = args[i + 1];
+    }
+
+    if(args[i] === '--schema-path') {
+        SCHEMA_PATH = args[i + 1];
+    }
+
+    if(args[i] === "--clean-after-compile") {
+        CLEAN_AFTER_COMPILE = true
+    }    
 }
 
 if(PROJECT_NAME == "") {
     console.error("--project is not defined")
     return 1
 }
+
+if(RPFM_EXE == "") {
+    console.error("--rpfm-path which should point to rpfm_cli.exe is not defined")
+    return 1
+}
+
+if(SCHEMA_PATH == "") {
+    console.error("--schema-path which should point to schema_wh3.ron is not defined")
+    return 1
+}
+
 
 
 /**
@@ -581,6 +607,9 @@ function GenerateDummyArmoryItemVariantUiInfos() {
         output.push({
             key: `const_kitbasher_dummy_wings__${skeleton}`,
         })
+        output.push({
+            key: `const_kitbasher_dummy_tail__${skeleton}`,
+        })
     }
 
     return output
@@ -897,15 +926,19 @@ function GenerateDummyVariants() {
  */
 
 function ClearDirectory() {
-    try {
-        let dir = path.join('build', 'intermediate')
+    
+    let dir = path.join('build', 'intermediate')
+    let command = ""
+    if(dir == "") return
 
-        if (fs.existsSync(dir)) {
-            fs.readdirSync(dir).forEach((file) => {
-                let filePath = path.join(dir, file)
-                fs.unlinkSync(filePath)
-            })
-        }
+    if (process.platform === 'win32') {
+        command = `rmdir /S /Q ${dir}`
+    } else {
+        command = `rm -rf ${dir}`
+    }
+
+    try {
+        execSync(command)
     } catch (error) {
         
     }
@@ -974,11 +1007,11 @@ function GenerateCsv_agent_subtypes_to_armory_item_sets_tables(data, projectName
     }
 
     const result = (header + out).trim()
-    let dir = path.join('build', 'intermediate', "db", "agent_uniforms_tables")
+    let dir = path.join('build', 'intermediate', "db", "agent_subtypes_to_armory_item_sets_tables")
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -999,7 +1032,7 @@ function GenerateCsv_armory_item_set_items_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1020,7 +1053,7 @@ function GenerateCsv_armory_item_sets_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1041,7 +1074,7 @@ function GenerateCsv_armory_item_slot_blacklists_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1062,7 +1095,7 @@ function GenerateCsv_armory_item_to_category_sets_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1083,7 +1116,7 @@ function GenerateCsv_armory_item_ui_infos_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1104,7 +1137,7 @@ function GenerateCsv_armory_item_variant_ui_infos_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1117,7 +1150,7 @@ function GenerateCsv_armory_item_variants_tables(data, projectName) {
 
     let out = ""
     for (const item of data) {
-        out += `${item.armory_item}	${item.variant}	${item.battle_animation}	${item.campaign_animation}	${item.use_as_default}	${item.ui_info}\n`
+        out += `${item.armory_item}	${item.variant}	${item.battle_animation ?? ""}	${item.campaign_animation}	${item.use_as_default}	${item.ui_info}\n`
     }
 
     const result = (header + out).trim()
@@ -1125,7 +1158,7 @@ function GenerateCsv_armory_item_variants_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1146,7 +1179,7 @@ function GenerateCsv_armory_items_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1168,7 +1201,7 @@ function GenerateCsv_battle_skeleton_parts_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1180,8 +1213,9 @@ function GenerateCsv_variants_tables(data, projectName) {
     `#variants_tables;6;db/variants_tables/@__${projectName}_${randomNumbering}_armory_data	\n`
 
     let out = ""
-    for (const item of data) {
-        out += `${item.variant_name}	${item.tech_folder}	${item.variant_filename}		${item.mount_scale}	${item.scale}	0	\n`
+    for (let item of data) {
+        if(item.mount_scale == "") item.mount_scale = 1
+        out += `${item.variant_name}	${item.tech_folder ?? ""}	${item.variant_filename ?? ""}		${item.mount_scale ?? 1}	${item.scale ?? 1}	0	\n`
     }
 
     const result = (header + out).trim()
@@ -1189,7 +1223,7 @@ function GenerateCsv_variants_tables(data, projectName) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true })
     }
-    const tableName = `@__${projectName}_${randomNumbering}_armory_data.csv`
+    const tableName = `@__${projectName}_${randomNumbering}_armory_data.tsv`
     const tsv = header + out
     fs.writeFileSync(path.join(dir, tableName), tsv)
 }
@@ -1307,4 +1341,71 @@ CopyPortholes()
 console.log("Copying cards")
 CopyCards()
 
+function BuildPack() {
+    console.log("Compiling pack...")
 
+    const destination = path.join('build', `@autogenerated_${PROJECT_NAME}.pack`)
+
+    const agent_subtypes_to_armory_item_sets_tables = path.join('build', 'intermediate', "db", "agent_subtypes_to_armory_item_sets_tables")
+    const armory_item_set_items_tables = path.join('build', 'intermediate', "db", "armory_item_set_items_tables")
+    const armory_item_sets_tables = path.join('build', 'intermediate', "db", "armory_item_sets_tables")
+    const armory_item_slot_blacklists_tables = path.join('build', 'intermediate', "db", "armory_item_slot_blacklists_tables")
+    const armory_item_to_category_sets_tables = path.join('build', 'intermediate', "db", "armory_item_to_category_sets_tables")
+    const armory_item_ui_infos_tables = path.join('build', 'intermediate', "db", "armory_item_ui_infos_tables")
+    const armory_item_variant_ui_infos_tables = path.join('build', 'intermediate', "db", "armory_item_variant_ui_infos_tables")
+    const armory_item_variants_tables = path.join('build', 'intermediate', "db", "armory_item_variants_tables")
+    const armory_items_tables = path.join('build', 'intermediate', "db", "armory_items_tables")
+    const battle_skeleton_parts_tables = path.join('build', 'intermediate', "db", "battle_skeleton_parts_tables")
+    const variants_tables = path.join('build', 'intermediate', "db", "variants_tables")
+    
+    const daemon_prince_gifts_icons = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons")
+    const dae_prince = path.join('build', 'intermediate', "ui", "portraits", "portholes", "dae_prince")
+    const dae_prince_unitCard = path.join('build', 'intermediate', "ui", "portraits", "units", "dae_prince")
+    
+    try {
+        fs.unlinkSync(destination)
+    } catch (error) {
+        
+    }
+
+    spawnSync(`${RPFM_EXE}`, [
+        '--game', 'warhammer_3', 
+        'pack', 
+        `create` , `--pack-path` , destination,   
+    ], {
+        stdio: "inherit",
+        encoding: 'utf8'
+    })
+
+    spawnSync(`${RPFM_EXE}`, [
+        '--game', 'warhammer_3', 
+        'pack', 
+        `add`, `--pack-path` , destination, 
+
+        `--tsv-to-binary`, `${SCHEMA_PATH}`,
+        `--folder-path`, `${agent_subtypes_to_armory_item_sets_tables}`,
+        `--folder-path`, `${armory_item_set_items_tables}`,
+        `--folder-path`, `${armory_item_sets_tables}`,
+        `--folder-path`, `${armory_item_slot_blacklists_tables}`,
+        `--folder-path`, `${armory_item_to_category_sets_tables}`,
+        `--folder-path`, `${armory_item_ui_infos_tables}`,
+        `--folder-path`, `${armory_item_variant_ui_infos_tables}`,
+        `--folder-path`, `${armory_item_variants_tables}`,
+        `--folder-path`, `${armory_items_tables}`,
+        `--folder-path`, `${battle_skeleton_parts_tables}`,
+        `--folder-path`, `${variants_tables}`,
+
+        `--folder-path`, `${daemon_prince_gifts_icons};ui/campaign ui/daemon_prince_gifts_icons`,
+        `--folder-path`, `${dae_prince};ui/portraits/portholes/dae_prince`,
+        `--folder-path`, `${dae_prince_unitCard};ui/portraits/units/dae_prince`,
+
+    ], 
+    { encoding: 'utf8', stdio: 'inherit'})
+    console.log(`Done for "${PROJECT_NAME}"`)
+}
+
+BuildPack()
+
+if(CLEAN_AFTER_COMPILE) {
+    ClearDirectory()
+}

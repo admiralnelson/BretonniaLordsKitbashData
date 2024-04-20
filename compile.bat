@@ -1,1 +1,1 @@
-node.exe compiler/compiler.js --project LouenArmoury
+node.exe compiler/compiler.js --project LouenArmoury --rpfm-path "D:/programs/rpfm shit/rpfm_cli.exe" --schema-path "C:/Users/admir/AppData/Roaming/rpfm/config/schemas/schema_wh3.ron" --clean-after-compile
