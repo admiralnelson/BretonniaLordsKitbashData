@@ -89,7 +89,7 @@
         "ItemName": "kitbasher_legs_louen_base",
         "LocalisedName": "Bare",
         "Description": "None",
-        "Type": "torso", 
+        "Type": "legs", 
         "IsItemDefinedFromAncillary": false,
         "AssociatedAncillaryKey": null,
         "AssociatedWithArmouryItemSet": "admiralnelson_armory_louen_leonceour_basic",

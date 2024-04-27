@@ -301,8 +301,9 @@ function CheckForDefaultSets() {
         }
 
         if (!("head" in transformedData[armourySet] && 
-              "torso" in transformedData[armourySet] )) {
-            console.warn(`In ${armourySet}: both head and torso must be present.`)
+              "torso" in transformedData[armourySet] && 
+              "legs" in transformedData[armourySet] )) {
+            console.warn(`In ${armourySet}: both head, torso, legs must be present.`)
             errored = true
         }
     }
@@ -793,11 +794,11 @@ function GenerateDummyArmoryItems() {
         })
         output.push({
             key:  `const_kitbasher_dummy_tail__${skeleton}`,
-            slot_type: "wings",
+            slot_type: "tail",
         })
         output.push({
             key: `const_kitbasher_dummy_wings__${skeleton}`,
-            slot_type: "tail",
+            slot_type: "wings",
         })
     }
 
@@ -1176,7 +1177,7 @@ function GenerateCsv_armory_item_variants_tables(data, projectName) {
 
     let out = ""
     for (const item of data) {
-        out += `${item.armory_item}	${item.variant}	${item.battle_animation ?? ""}	${item.campaign_animation}	${item.use_as_default}	${item.ui_info}\n`
+        out += `${item.armory_item}	${item.variant}	${item.battle_animation ?? ""}	${item.campaign_animation ?? ""}	${item.use_as_default}	${item.ui_info}\n`
     }
 
     const result = (header + out).trim()
@@ -1369,6 +1370,7 @@ function InsertDummyAssets() {
     
     const fileRequiredAssetName = path.join("required_assets", "transparent_wings.png")
     const fileRequiredAssetName2 = path.join("required_assets", "transparent_wings2.png")
+    const fileRequiredAssetName3 = path.join("required_assets", "dummy_wings_icon.png")
     
     const output = []
     for (const skeleton of Skeletons) {
@@ -1390,6 +1392,13 @@ function InsertDummyAssets() {
             fs.copyFileSync(fileRequiredAssetName2, dest1)
             const dest2 = path.join("build", "intermediate", "ui", "portraits", "units", "dae_prince",  dummyPortholeNameMask)
             fs.copyFileSync(fileRequiredAssetName2, dest2)
+        }
+
+        {
+            const dummyIconName = `const_kitbasher_dummy_wings__${skeleton}.png`
+
+            let dir = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons", dummyIconName)
+            fs.copyFileSync(fileRequiredAssetName3, dir)
         }
     }
 }
