@@ -142,7 +142,7 @@
         "UiIcon": "assets/icons/kitbasher_louen_sword_base.png",
         "Thumbnail": null,
         "UnitCardThumbnail":null,
-        "VariantMesh": "variant_none_louen/armour_shield_test",
+        "VariantMesh": "variant_none_louen/armour_sword_test",
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
         "BattleAnimation": null,
