@@ -98,7 +98,8 @@ function ReadArmouryDefinitions() {
                 "BattleAnimation",
                 "CampaignAnimation",
                 "OnlyCompatibleWithItem",
-                "AudioType"
+                "AudioType",
+                "SubtypeKey"
             ]
             keys.forEach(key => {
                 if (!(key in object)) {
@@ -1415,6 +1416,26 @@ CopyCards()
 console.log("Injecting dummy assets")
 InsertDummyAssets()
 
+function TransformArmouryDefsToSubtype() {
+    const result = {}
+
+    for (const item of ArmouryDefs) {
+        if (item.IsItemDefinedFromAncillary) {
+            const subtypeKey = item.SubtypeKey
+            const itemName = item.ItemName
+            const associatedAncillaryKey = item.AssociatedAncillaryKey
+
+            if (!result[subtypeKey]) {
+                result[subtypeKey] = {}
+            }
+
+            result[subtypeKey][itemName] = associatedAncillaryKey
+        }
+    }
+
+    return result
+}
+
 function BuildScript() {
 
     const dir = path.join('build', 'intermediate', "ts")
@@ -1426,19 +1447,27 @@ function BuildScript() {
     const targetHeaderPath = path.join('build', 'intermediate', "ts", "Header_BretonniaInGameKitbashKitbashedCharacter.d.ts")
 
     //fs.copyFileSync(headerPath, targetHeaderPath)
+    const transformedData = TransformArmouryDefsToSubtype()
 
     const randomNumbering = Math.floor(Math.random() * 1000000)
     let out =  ""
     for (const iterator of ArmouryData) {
 
+        
         const possibleMounts = JSON.stringify(iterator.PossibleMounts)
         const defaultArmorySet = iterator.DefaultArmoryItemSet
         const SubtypeKey = iterator.SubtypeKey
+
+        let specialItems = transformedData[SubtypeKey]
+        if(!specialItems) specialItems = {}
+
+        const specialItemsSerialised = JSON.stringify(specialItems)
+
         const registerTemplate = `
 BretonniaInGameKitbash.KitbashedCharacter.Register(
     "${SubtypeKey}", {
     possibleMounts: ${possibleMounts},
-    specialItems : { /* TODO */ },
+    specialItems : ${specialItemsSerialised},
     defaultArmorySet: "${defaultArmorySet}"
 })
 

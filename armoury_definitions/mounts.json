@@ -1,6 +1,7 @@
 [
     {
         "ItemName": "kitbasher_horse_louen_base",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "Warhourse",
         "Description": "None",
         "Type": "mount", 
@@ -22,6 +23,7 @@
     },
     {
         "ItemName": "kitbasher_pegasus_louen_base",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "Pegasus",
         "Description": "None",
         "Type": "mount", 
@@ -44,6 +46,7 @@
     
     {
         "ItemName": "kitbasher_beaquis_louen_base",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "The Mighty Beaquis",
         "Description": "None",
         "Type": "mount", 

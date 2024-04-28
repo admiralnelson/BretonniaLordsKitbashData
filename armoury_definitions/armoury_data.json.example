@@ -1,6 +1,8 @@
 [
     {
         "//": "PLEASE REMOVE // before pasting this into the as .json",
+        "//": "Agent subtype key, for whom this item is intended",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "//": "This defines your item name internally, keep this unique! even for different type os Skeleton!",
         "ItemName": "kitbasher_horse_louen_base",
         "//": "LocalisedName is displayed on the UI",

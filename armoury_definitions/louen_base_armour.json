@@ -1,6 +1,7 @@
 [
     {
         "ItemName": "kitbasher_cape_none",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "No Cape",
         "Description": "None",
         "Type": "cape", 
@@ -22,6 +23,7 @@
     },
     {
         "ItemName": "kitbasher_talisman_none",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "No Talisman",
         "Description": "None",
         "Type": "talisman", 
@@ -43,6 +45,7 @@
     },
     {
         "ItemName": "kitbasher_head_louen_base",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "No Headgear",
         "Description": "None",
         "Type": "head", 
@@ -65,6 +68,7 @@
     },
     {
         "ItemName": "kitbasher_body_louen_base",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "Bare",
         "Description": "None",
         "Type": "torso", 
@@ -87,6 +91,7 @@
     },
     {
         "ItemName": "kitbasher_legs_louen_base",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "Bare",
         "Description": "None",
         "Type": "legs", 
@@ -109,6 +114,7 @@
     },
     {
         "ItemName": "kitbasher_shield_louen_base",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "Basic Shield",
         "Description": "None",
         "Type": "shield", 
@@ -131,6 +137,7 @@
     },
     {
         "ItemName": "kitbasher_louen_sword_base",
+        "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "Basic Sword",
         "Description": "None",
         "Type": "1handed", 
