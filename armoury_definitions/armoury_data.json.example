@@ -32,6 +32,8 @@
         "UnitCardThumbnail": null,
         "//": "VariantMesh path for this item, could be null if the type is mount or the item has no appearance",
         "VariantMesh": null,
+        "//": "If this set to true, then VariantMeshDefinition will be generated from VariantMesh path which points to .wsmodel or .rigid_model_v2",
+        "VariantMeshDefinitionShouldCreate": false,
         "//": "VariantMesh scale",
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -46,6 +48,7 @@
         "OnlyCompatibleWithItem": null,
         "//": "Audio sound effects on the variantmeshes",
         "//": "Can be set to null if there isnt any",
+        "//": "This depends also on VariantMeshDefinitionShouldCreate"
         "AudioType": null
     }
 ]
