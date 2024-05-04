@@ -407,6 +407,10 @@ function GenerateDummyArmoryItemSetItems() {
             armory_item: `const_kitbasher_dummy_wings__${armoury.Skeleton}`,
             armory_item_set: armoury.DefaultArmoryItemSet
         })
+        output.push({
+            armory_item: `const_kitbasher_dummy_tail__${armoury.Skeleton}`,
+            armory_item_set: armoury.DefaultArmoryItemSet
+        })
     }
 
     return output
@@ -532,6 +536,10 @@ function GenerateDummyArmoryItemToCategorySets() {
             armory_item: `const_kitbasher_dummy_wings__${skeleton}`,
             category_set: "generic"
         })
+        output.push({
+            armory_item: `const_kitbasher_dummy_tail__${skeleton}`,
+            category_set: "generic"
+        })
     }
 
     return output
@@ -591,6 +599,10 @@ function GenerateDummyArmoryItemUiInfos() {
         })
         output.push({
             armory_item: `const_kitbasher_dummy_wings__${skeleton}`,
+            type: "const_kitbasher_50_common"
+        })
+        output.push({
+            armory_item: `const_kitbasher_dummy_tail__${skeleton}`,
             type: "const_kitbasher_50_common"
         })
     }
@@ -1452,6 +1464,7 @@ function InsertDummyAssets() {
             fs.copyFileSync(fileRequiredAssetName2, dest2)
         }
 
+        //dummy
         {
             const dummyIconName = `const_kitbasher_dummy_wings__${skeleton}.png`
 
@@ -1459,8 +1472,25 @@ function InsertDummyAssets() {
             fs.copyFileSync(fileRequiredAssetName3, dir)
         }
 
+        //cape
         {
             const dummyIconName = `const_kitbasher_dummy_arm_left__${skeleton}.png`
+
+            let dir = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons", dummyIconName)
+            fs.copyFileSync(fileRequiredAssetName3, dir)
+        }
+
+        //mount
+        {
+            const dummyIconName = `const_kitbasher_dummy_arm_right__${skeleton}.png`
+
+            let dir = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons", dummyIconName)
+            fs.copyFileSync(fileRequiredAssetName3, dir)
+        }
+
+        //talisman
+        {
+            const dummyIconName = `const_kitbasher_dummy_tail__${skeleton}.png`
 
             let dir = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons", dummyIconName)
             fs.copyFileSync(fileRequiredAssetName3, dir)
