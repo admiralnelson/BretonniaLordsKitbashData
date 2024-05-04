@@ -1,28 +1,5 @@
 [
     {
-        "ItemName": "kitbasher_cape_none",
-        "SubtypeKey": "wh_main_brt_louen_leoncouer",
-        "LocalisedName": "No Cape",
-        "Description": "None",
-        "Type": "cape", 
-        "IsItemDefinedFromAncillary": false,
-        "AssociatedAncillaryKey": null,
-        "AssociatedWithArmouryItemSet": "admiralnelson_armory_louen_leonceour_basic",
-        "Skeleton": "humanoid01c",
-        "ItemCategory": "unique",
-        "UiIcon": "assets/icons/kitbasher_cape_none.png",
-        "Thumbnail": null,
-        "UnitCardThumbnail": null,
-        "VariantMesh": null,
-        "VariantMeshDefinitionShouldCreate": false,
-        "VariantMeshScale": 1,
-        "VariantMeshMountScale": 1,
-        "BattleAnimation": null,
-        "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null,
-        "AudioType": null
-    },
-    {
         "ItemName": "kitbasher_talisman_none",
         "SubtypeKey": "wh_main_brt_louen_leoncouer",
         "LocalisedName": "No Talisman",

@@ -1458,6 +1458,13 @@ function InsertDummyAssets() {
             let dir = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons", dummyIconName)
             fs.copyFileSync(fileRequiredAssetName3, dir)
         }
+
+        {
+            const dummyIconName = `const_kitbasher_dummy_arm_left__${skeleton}.png`
+
+            let dir = path.join('build', 'intermediate', "ui", "campaign ui", "daemon_prince_gifts_icons", dummyIconName)
+            fs.copyFileSync(fileRequiredAssetName3, dir)
+        }
     }
 }
 
