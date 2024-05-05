@@ -12,6 +12,8 @@ let RPFM_EXE = ""
 let SCHEMA_PATH = ""
 let CLEAN_AFTER_COMPILE = false
 let FACTION = ""
+let PACK_FILE_TO_MERGE = ""
+
 
 const args = process.argv
 for(let i = 0; i < args.length; i++) {
@@ -35,7 +37,9 @@ for(let i = 0; i < args.length; i++) {
         CLEAN_AFTER_COMPILE = true
     }    
 
-
+    if(args[i] === "--pack-file-to-merge") {
+        PACK_FILE_TO_MERGE = args[i + 1]
+    }    
 }
 
 if(PROJECT_NAME == "") {
@@ -1645,6 +1649,22 @@ function BuildPack() {
         encoding: 'utf8'
     })
 
+    if(PACK_FILE_TO_MERGE) {
+
+        console.log("Merging pack...")
+        
+        spawnSync(`${RPFM_EXE}`, [
+            '--game', 'warhammer_3', 
+            'pack', 
+            `merge` , 
+            `--source-pack-paths` , PACK_FILE_TO_MERGE,
+            `--save-pack-path`, destination
+        ], {
+            stdio: "inherit",
+            encoding: 'utf8'
+        })
+    }
+
     spawnSync(`${RPFM_EXE}`, [
         '--game', 'warhammer_3', 
         'pack', 
@@ -1679,6 +1699,7 @@ function BuildPack() {
 }
 
 BuildPack()
+
 
 if(CLEAN_AFTER_COMPILE) {
     ClearDirectory()
