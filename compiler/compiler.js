@@ -243,6 +243,11 @@ function CheckForThumbnailPath() {
             console.log(`File name does not match with ItemName: ${unitCardThumbnailPath}, ItemName is ${def.ItemName}`)
             errored = true
         }
+        
+        if(def.ItemName.length > 40) {
+            console.log(`ItemName is too long (which is tied to your porthole/unitcard pngs): ${unitCardThumbnailPath}, ItemName is ${def.ItemName}`)
+            errored = true
+        }
     }
 
     if(errored) throw "found invalid thumbnail"
@@ -377,14 +382,18 @@ function GenerateArmoryItemSetItems() {
     const output = []
     for (const armoury of ArmouryData) {
         for (const armourDef of ArmouryDefs) {
-            if(armourDef.AssociatedWithArmouryItemSet != armoury.DefaultArmoryItemSet) continue
+            if(armourDef.AssociatedWithArmouryItemSet != null && 
+               armourDef.AssociatedWithArmouryItemSet != armoury.DefaultArmoryItemSet) continue
             else {
                 if(armourDef.Skeleton != armoury.Skeleton) continue
             }
 
+            let armouryAssociation = armoury.DefaultArmoryItemSet
+            if(!armourDef.AssociatedWithArmouryItemSet) armouryAssociation = "const_kitbasher_unassigned_armoury_item"
+
             output.push({
                 armory_item: armourDef.ItemName,
-                armory_item_set: armoury.DefaultArmoryItemSet
+                armory_item_set: armouryAssociation
             })
         }
     }
@@ -414,6 +423,25 @@ function GenerateDummyArmoryItemSetItems() {
         output.push({
             armory_item: `const_kitbasher_dummy_tail__${armoury.Skeleton}`,
             armory_item_set: armoury.DefaultArmoryItemSet
+        })
+
+        ////
+        const undefinedItem = "const_kitbasher_unassigned_armoury_item"
+        output.push({
+            armory_item: `const_kitbasher_dummy_arm_left__${armoury.Skeleton}`,
+            armory_item_set: undefinedItem
+        })
+        output.push({
+            armory_item: `const_kitbasher_dummy_arm_right__${armoury.Skeleton}`,
+            armory_item_set: undefinedItem
+        })
+        output.push({
+            armory_item: `const_kitbasher_dummy_wings__${armoury.Skeleton}`,
+            armory_item_set: undefinedItem
+        })
+        output.push({
+            armory_item: `const_kitbasher_dummy_tail__${armoury.Skeleton}`,
+            armory_item_set: undefinedItem
         })
     }
 
