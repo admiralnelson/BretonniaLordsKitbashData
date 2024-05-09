@@ -20,8 +20,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
-        
+        "AudioType": null,
+        "PreferencedItems": []
     },
     {
         "ItemName": "kitbasher_body_louen_base",
@@ -44,8 +44,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
-
+        "AudioType": null,
+        "PreferencedItems": []
     },
     {
         "ItemName": "kitbasher_legs_louen_base",
@@ -68,8 +68,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
-
+        "AudioType": null,
+        "PreferencedItems": []
     },
     {
         "ItemName": "kitbasher_shield_louen_base",
@@ -92,7 +92,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
+        "AudioType": null,
+        "PreferencedItems": []
 
     },
     {
@@ -116,7 +117,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
+        "AudioType": null,
+        "PreferencedItems": []
 
     }
 ]

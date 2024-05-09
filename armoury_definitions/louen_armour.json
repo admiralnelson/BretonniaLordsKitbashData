@@ -20,7 +20,10 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [
+            "louen_admiralnelson_gilded_greaves_item_key"
+        ]
     },
     {
         "ItemName": "louen_wh_dlc07_anc_armour_gilded_cuirass",
@@ -43,7 +46,10 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [
+            "louen_admiralnelson_gilded_greaves_item_key"
+        ]
     },
     {
         "ItemName": "louen_wh_main_anc_armour_armour_of_destiny",
@@ -66,7 +72,10 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [
+            "louen_admiralnelson_gilded_greaves_item_key"
+        ]
     },
     {
         "ItemName": "louen_admiralnelson_armour_of_revered_tabard_item_key",
@@ -89,7 +98,9 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
+
     },
 
 
@@ -114,7 +125,9 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
+
     },
 
     {
@@ -138,7 +151,9 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
+
     }
 
 ]

@@ -20,7 +20,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
     },
 
     {
@@ -44,7 +45,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
     },
 
     {
@@ -68,6 +70,7 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
     }
 ]

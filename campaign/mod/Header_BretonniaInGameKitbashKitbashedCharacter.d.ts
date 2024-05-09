@@ -19,10 +19,16 @@ declare namespace BretonniaInGameKitbash {
     type ArmoryItemToAncillary = {
         [armoryItemKey: string]: string;
     };
+
+    type ArmoryItemToArmoryItems = {
+        [armoryItemKey: string]: string[];
+    };
+
     type KitbashData = {
         defaultArmorySet: string;
         possibleMounts: ArmoryItemToAncillary;
         specialItems: ArmoryItemToAncillary;
+        armouryItemPreferences: ArmoryItemToArmoryItems;
     };
     export class KitbashedCharacter extends Character {
         private static EnabledFactions;

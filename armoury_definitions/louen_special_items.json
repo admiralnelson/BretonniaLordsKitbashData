@@ -20,7 +20,11 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [
+            "louen_wh2_dlc12_anc_armour_brt_armour_of_brilliance_legs",
+            "louen_admiralnelson_louen_royal_cape_item_key"
+        ]
     },
     {
         "ItemName": "louen_wh2_dlc12_anc_armour_brt_armour_of_brilliance_legs",
@@ -43,7 +47,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate", 
+        "PreferencedItems": []
     },
     {
         "ItemName": "louen_admiralnelson_louen_royal_cape_item_key",
@@ -66,7 +71,10 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": "audio_armour_type:plate"
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [
+            "kitbasher_head_louen_crown"
+        ]
     },
     {
         "ItemName": "kitbasher_head_louen_crown",
@@ -89,7 +97,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
+        "AudioType": null,
+        "PreferencedItems": []
     },
     {
         "ItemName": "kitbasher_head_louen_battle_crown",
@@ -112,6 +121,7 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
+        "AudioType": null,
+        "PreferencedItems": []
     }
 ]

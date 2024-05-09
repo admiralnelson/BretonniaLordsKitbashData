@@ -104,7 +104,8 @@ function ReadArmouryDefinitions() {
                 "OnlyCompatibleWithItem",
                 "AudioType",
                 "SubtypeKey",
-                "VariantMeshDefinitionShouldCreate"
+                "VariantMeshDefinitionShouldCreate",
+                "PreferencedItems"
             ]
             keys.forEach(key => {
                 if (!(key in object)) {
@@ -245,7 +246,7 @@ function CheckForThumbnailPath() {
         }
         
         if(def.ItemName.length > 40) {
-            console.log(`ItemName is too long (which is tied to your porthole/unitcard pngs): ${unitCardThumbnailPath}, ItemName is ${def.ItemName}`)
+            console.log(`Head ItemName is too long (which is tied to your porthole/unitcard pngs): ${unitCardThumbnailPath}, ItemName is ${def.ItemName}`)
             errored = true
         }
     }
@@ -343,6 +344,18 @@ function CheckForVariantMesh() {
     if(errored) throw "found null VariantMeshes"
 }
 
+function CheckPreferencedItemsPointsToValidItem() {
+    const itemNames = ArmouryDefs.map(item => item.ItemName)
+
+    for (const item of ArmouryDefs) {
+        if(item.PreferencedItems == null || item.PreferencedItems.length == 0) continue
+        if(!item.PreferencedItems.every(elem => itemNames.includes(elem))) {
+            throw "ItemName " + item.ItemName + " has invalid undefined item defined in  PreferencedItems: " + JSON.stringify(item.PreferencedItems)
+        }
+    }
+
+}
+
 console.log("Validating data")
 CheckForDuplicateSubtypeKey()
 CheckForDuplicateItemName()
@@ -351,6 +364,7 @@ CheckForIconsPath()
 CheckForThumbnailPath()
 CheckForDefaultSets()
 CheckForVariantMesh()
+CheckPreferencedItemsPointsToValidItem()
 console.log("Data validated")
 
 
@@ -1562,6 +1576,16 @@ function TransformArmouryDefsToSubtype() {
     return result
 }
 
+function FindPreferencedItem(whichItem) {
+    for (const iterator of ArmouryDefs) {
+        if(iterator.ItemName != whichItem) continue
+
+        return iterator.PreferencedItems
+    }
+
+    return null
+}
+
 function BuildScript() {
 
     const dir = path.join('build', 'intermediate', "ts")
@@ -1589,12 +1613,23 @@ function BuildScript() {
 
         const specialItemsSerialised = JSON.stringify(specialItems)
 
+        let preferencedItems = {}
+        if(specialItems) {
+            const specialItemNames = Object.keys(specialItems)
+            for (const iterator of specialItemNames) {
+                preferencedItems[iterator] = FindPreferencedItem(iterator)
+            }
+        }
+
+        preferencedItems = JSON.stringify(preferencedItems)
+
         const registerTemplate = `
 BretonniaInGameKitbash.KitbashedCharacter.Register(
     "${SubtypeKey}", {
     possibleMounts: ${possibleMounts},
     specialItems : ${specialItemsSerialised},
-    defaultArmorySet: "${defaultArmorySet}"
+    defaultArmorySet: "${defaultArmorySet}",
+    armouryItemPreferences: ${preferencedItems}
 })
 
 `

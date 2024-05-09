@@ -49,6 +49,8 @@
         "//": "Audio sound effects on the variantmeshes",
         "//": "Can be set to null if there isnt any",
         "//": "This depends also on VariantMeshDefinitionShouldCreate"
-        "AudioType": null
+        "AudioType": null,
+        "//": "The AI will use this item if it's available in the slot. Leave it null or empty array, if there's none. The element should be ItemName"
+        "PreferencedItems": null
     }
 ]

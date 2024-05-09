@@ -20,7 +20,9 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
+        "AudioType": null,
+        "PreferencedItems": []
+
     },
     {
         "ItemName": "kitbasher_pegasus_louen_base",
@@ -43,7 +45,9 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
+        "AudioType": null,
+        "PreferencedItems": []
+
     },
     
     {
@@ -67,6 +71,8 @@
         "BattleAnimation": null,
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
-        "AudioType": null
+        "AudioType": null,
+        "PreferencedItems": []
+
     }
 ]
