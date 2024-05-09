@@ -15,6 +15,15 @@ declare namespace BretonniaInGameKitbash {
 
     }
 
+    type Type = 
+    "head"      |
+    "cape"      |
+    "torso"     |
+    "legs"      |
+    "mount"     |
+    "weapon"    |
+    "shield"    |
+    "talisman"  ;
 
     type ArmoryItemToAncillary = {
         [armoryItemKey: string]: string;
@@ -24,11 +33,17 @@ declare namespace BretonniaInGameKitbash {
         [armoryItemKey: string]: string[];
     };
 
+    type ArmoryItemToValue = {[armoryItemKey: string]: {
+        Powerlevel: number,
+        Type: Type
+    }};
+
     type KitbashData = {
         defaultArmorySet: string;
         possibleMounts: ArmoryItemToAncillary;
         specialItems: ArmoryItemToAncillary;
         armouryItemPreferences: ArmoryItemToArmoryItems;
+        bCanUseShield: boolean;
     };
     export class KitbashedCharacter extends Character {
         private static EnabledFactions;
@@ -37,6 +52,7 @@ declare namespace BretonniaInGameKitbash {
         private static CharacterToKitbashData;
         static TryCast(character: Character): KitbashedCharacter | null;
         private static EnableKitbashForCharacter;
+        public static RegisterItemValues(armouryToValue: ArmoryItemToValue): void;
         static Register(agentKey: string, kitbashData: KitbashData): void;
         static EnableFaction(factionKey: string): void;
         private constructor();

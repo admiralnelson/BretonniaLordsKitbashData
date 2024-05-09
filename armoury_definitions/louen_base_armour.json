@@ -21,7 +21,9 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": []
+        "PreferencedItems": [],
+        "Powerlevel": 0
+        
     },
     {
         "ItemName": "kitbasher_body_louen_base",
@@ -45,7 +47,9 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": []
+        "PreferencedItems": [],
+        "Powerlevel": 0
+
     },
     {
         "ItemName": "kitbasher_legs_louen_base",
@@ -69,7 +73,9 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": []
+        "PreferencedItems": [],
+        "Powerlevel": 0
+
     },
     {
         "ItemName": "kitbasher_shield_louen_base",
@@ -93,7 +99,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": []
+        "PreferencedItems": [],
+        "Powerlevel": 0
 
     },
     {
@@ -118,7 +125,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": []
+        "PreferencedItems": [],
+        "Powerlevel": 0
 
     }
 ]

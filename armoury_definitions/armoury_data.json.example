@@ -51,6 +51,8 @@
         "//": "This depends also on VariantMeshDefinitionShouldCreate"
         "AudioType": null,
         "//": "The AI will use this item if it's available in the slot. Leave it null or empty array, if there's none. The element should be ItemName"
-        "PreferencedItems": null
+        "PreferencedItems": null,
+        "//": "Powerlevel of this item, the AI will pick the most high powerlevel, then it picks based on the preference defined in PreferencedItems"
+        "Powerlevel": 0
     }
 ]

@@ -21,7 +21,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": []
+        "PreferencedItems": [],
+        "Powerlevel": 100
 
     },
     {
@@ -46,7 +47,9 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": []
+        "PreferencedItems": [],
+        "Powerlevel": 200
+
 
     },
     
@@ -72,7 +75,9 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": []
+        "PreferencedItems": [],
+        "Powerlevel": 300
+
 
     }
 ]
