@@ -1,7 +1,7 @@
 [
     {
-        "ItemName": "louen_admiralnelson_paladin_cape_item_key",
-        "SubtypeKey": "wh_main_brt_louen_leoncouer",
+        "ItemName": "lord_2_admiralnelson_paladin_cape_item_key",
+        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
         "LocalisedName": "The Paladin Cape",
         "Description": "None",
         "Type": "cape", 
@@ -10,7 +10,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/louen_admiralnelson_paladin_cape_item_key.png",
+        "UiIcon": "assets/icons/lord_2_admiralnelson_paladin_cape_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/capes/massif_cape_1.rigid_model_v2",
@@ -27,8 +27,8 @@
     },
 
     {
-        "ItemName": "louen_admiralnelson_legacy_cape_item_key",
-        "SubtypeKey": "wh_main_brt_louen_leoncouer",
+        "ItemName": "lord_2_admiralnelson_legacy_cape_item_key",
+        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
         "LocalisedName": "Count Bernard's Cape",
         "Description": "None",
         "Type": "cape", 
@@ -37,7 +37,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/louen_admiralnelson_legacy_cape_item_key.png",
+        "UiIcon": "assets/icons/lord_2_admiralnelson_legacy_cape_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/capes/massif_cape_3.rigid_model_v2",
@@ -54,8 +54,8 @@
     },
 
     {
-        "ItemName": "louen_admiralnelson_grail_knight_cape_item_key",
-        "SubtypeKey": "wh_main_brt_louen_leoncouer",
+        "ItemName": "lord_2_admiralnelson_grail_knight_cape_item_key",
+        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
         "LocalisedName": "The Grail Knight Cape I",
         "Description": "None",
         "Type": "cape", 
@@ -64,7 +64,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/louen_admiralnelson_grail_knight_cape_item_key.png",
+        "UiIcon": "assets/icons/lord_2_admiralnelson_grail_knight_cape_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/capes/massif_cape_2.rigid_model_v2",

@@ -1,0 +1,13 @@
+[
+    {
+        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "Skeleton": "humanoid01c",
+        "DefaultArmoryItemSet": "admiralnelson_armory_massif_lord_2",
+        "PossibleMounts": {
+            "lord_2_horse_mount": "admiralnelson_bret_general_warhorse_massif_sword_shield_anciliary_key",
+            "lord_2_kitbasher_pegasus_mount": "admiralnelson_bret_general_pegasus_massif_sword_shield_anciliary_key",
+            "lord_2_kitbasher_hippogriff_mount": "admiralnelson_bret_general_hippogrif_massif_sword_shield_anciliary_key"
+        },
+        "bCanUseShield": true
+    }
+]
