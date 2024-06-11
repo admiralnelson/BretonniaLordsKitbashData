@@ -396,13 +396,24 @@ function GenerateArmoryItemSetItems() {
             }
 
             let armouryAssociation = armoury.DefaultArmoryItemSet
-            if(!armourDef.AssociatedWithArmouryItemSet) armouryAssociation = "const_kitbasher_unassigned_armoury_item"
+            if(!armourDef.AssociatedWithArmouryItemSet) continue
 
             output.push({
                 armory_item: armourDef.ItemName,
                 armory_item_set: armouryAssociation
             })
         }
+    }
+
+    for (const armourDef of ArmouryDefs) {
+        if(armourDef.AssociatedWithArmouryItemSet) continue
+
+        armouryAssociation = "const_kitbasher_unassigned_armoury_item"
+
+        output.push({
+            armory_item: armourDef.ItemName,
+            armory_item_set: armouryAssociation
+        })
     }
 
     return output
@@ -433,21 +444,27 @@ function GenerateDummyArmoryItemSetItems() {
         })
 
         ////
+        
+    }
+
+    const skeletons = Array.from(new Set(ArmouryData.map(item => item.Skeleton)))
+
+    for (const skeleton of skeletons) {
         const undefinedItem = "const_kitbasher_unassigned_armoury_item"
         output.push({
-            armory_item: `const_kitbasher_dummy_arm_left__${armoury.Skeleton}`,
+            armory_item: `const_kitbasher_dummy_arm_left__${skeleton}`,
             armory_item_set: undefinedItem
         })
         output.push({
-            armory_item: `const_kitbasher_dummy_arm_right__${armoury.Skeleton}`,
+            armory_item: `const_kitbasher_dummy_arm_right__${skeleton}`,
             armory_item_set: undefinedItem
         })
         output.push({
-            armory_item: `const_kitbasher_dummy_wings__${armoury.Skeleton}`,
+            armory_item: `const_kitbasher_dummy_wings__${skeleton}`,
             armory_item_set: undefinedItem
         })
         output.push({
-            armory_item: `const_kitbasher_dummy_tail__${armoury.Skeleton}`,
+            armory_item: `const_kitbasher_dummy_tail__${skeleton}`,
             armory_item_set: undefinedItem
         })
     }
