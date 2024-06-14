@@ -1,7 +1,7 @@
 [
     {
         "ItemName": "lord_1_2handed_kitbasher_head_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key"],
         "LocalisedName": "No Headgear",
         "Description": "None",
         "Type": "head", 
@@ -27,7 +27,7 @@
     },
     {
         "ItemName": "lord_1_2handed_kitbasher_body_naked_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key"],
         "LocalisedName": "Bare",
         "Description": "None",
         "Type": "torso", 
@@ -53,7 +53,7 @@
     },
     {
         "ItemName": "lord_1_2handed_kitbasher_legs_naked_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key"],
         "LocalisedName": "Bare",
         "Description": "None",
         "Type": "legs", 
@@ -79,7 +79,7 @@
     },
     {
         "ItemName": "lord_1_2handed_kitbasher_sword_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key"],
         "LocalisedName": "Basic Axe",
         "Description": "None",
         "Type": "2handed", 

@@ -1,7 +1,10 @@
 [
     {
-        "ItemName": "lord_2_admiralnelson_lordly_pauldron_of_courage_pauldrons_item_key",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "ItemName": "admiralnelson_lordly_pauldron_of_courage_pauldrons_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+        ],
         "LocalisedName": "Big Pauldrons",
         "Description": "None",
         "Type": "pauldrons", 
@@ -10,7 +13,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/1handed_lords_massif/lord_2_admiralnelson_lordly_pauldron_of_courage_pauldrons_item_key.png",
+        "UiIcon": "assets/icons/base_items/admiralnelson_lordly_pauldron_of_courage_pauldrons_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/armour_pauldrons/massif_lordly_pauldron.wsmodel",
@@ -26,8 +29,11 @@
 
     },
     {
-        "ItemName": "lord_2_admiralnelson_gilded_pauldrons_with_rondels_pauldrons_item_key",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "ItemName": "admiralnelson_gilded_pauldrons_with_rondels_pauldrons_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+        ],
         "LocalisedName": "Gilded Pauldrons With Rondels",
         "Description": "None",
         "Type": "pauldrons", 
@@ -36,7 +42,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/1handed_lords_massif/lord_2_admiralnelson_gilded_pauldrons_with_rondels_pauldrons_item_key.png",
+        "UiIcon": "assets/icons/base_items/admiralnelson_gilded_pauldrons_with_rondels_pauldrons_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/armour_pauldrons/massif_gilded_pauldron_with_gilded_rondels.wsmodel",
@@ -53,8 +59,11 @@
     },
 
     {
-        "ItemName": "lord_2_admiralnelson_pauldrons_with_single_neck_guard_pauldrons_item_key",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "ItemName": "admiralnelson_pauldrons_with_single_neck_guard_pauldrons_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+        ],
         "LocalisedName": "Pauldrons With Single Neck Guard",
         "Description": "None",
         "Type": "pauldrons", 
@@ -63,7 +72,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/1handed_lords_massif/lord_2_admiralnelson_pauldrons_with_single_neck_guard_pauldrons_item_key.png",
+        "UiIcon": "assets/icons/base_items/admiralnelson_pauldrons_with_single_neck_guard_pauldrons_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/armour_pauldrons/massif_gilded_pauldron_with_head_guard_single.wsmodel",
@@ -80,8 +89,11 @@
     },
 
     {
-        "ItemName": "lord_2_admiralnelson_pauldrons_with_neck_guard_pauldrons_item_key",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "ItemName": "admiralnelson_pauldrons_with_neck_guard_pauldrons_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+        ],
         "LocalisedName": "Pauldrons With Neck Guard",
         "Description": "None",
         "Type": "pauldrons", 
@@ -90,7 +102,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/1handed_lords_massif/lord_2_admiralnelson_pauldrons_with_neck_guard_pauldrons_item_key.png",
+        "UiIcon": "assets/icons/base_items/admiralnelson_pauldrons_with_neck_guard_pauldrons_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/armour_pauldrons/massif_gilded_pauldron_with_head_guard.wsmodel",
@@ -107,8 +119,11 @@
     },
 
     {
-        "ItemName": "lord_2_admiralnelson_gilded_pauldrons_pauldrons_item_key",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "ItemName": "admiralnelson_gilded_pauldrons_pauldrons_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+        ],
         "LocalisedName": "Gilded Pauldrons",
         "Description": "None",
         "Type": "pauldrons", 
@@ -117,7 +132,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/1handed_lords_massif/lord_2_admiralnelson_gilded_pauldrons_pauldrons_item_key.png",
+        "UiIcon": "assets/icons/base_items/admiralnelson_gilded_pauldrons_pauldrons_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/armour_pauldrons/massif_gilded_pauldron.wsmodel",
@@ -134,8 +149,11 @@
     },
 
     {
-        "ItemName": "lord_2_admiralnelson_fleur_de_lys_rondels_pauldrons_item_key",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "ItemName": "admiralnelson_fleur_de_lys_rondels_pauldrons_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+        ],
         "LocalisedName": "Fleur de Lys Rondels",
         "Description": "None",
         "Type": "pauldrons", 
@@ -144,7 +162,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/1handed_lords_massif/lord_2_admiralnelson_fleur_de_lys_rondels_pauldrons_item_key.png",
+        "UiIcon": "assets/icons/base_items/admiralnelson_fleur_de_lys_rondels_pauldrons_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/armour_pauldrons/massif_rondels_fleur_de_lys.wsmodel",
@@ -161,8 +179,11 @@
     },
 
     {
-        "ItemName": "lord_2_admiralnelson_gilded_rondels_pauldrons_item_key",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "ItemName": "admiralnelson_gilded_rondels_pauldrons_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+        ],
         "LocalisedName": "Gilded Rondels",
         "Description": "None",
         "Type": "pauldrons", 
@@ -171,7 +192,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
-        "UiIcon": "assets/icons/1handed_lords_massif/lord_2_admiralnelson_gilded_rondels_pauldrons_item_key.png",
+        "UiIcon": "assets/icons/base_items/admiralnelson_gilded_rondels_pauldrons_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes/armour_pauldrons/massif_rondels_gilded.wsmodel",

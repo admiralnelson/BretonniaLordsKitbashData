@@ -1,7 +1,7 @@
 [
     {
         "ItemName": "lord_2_kitbasher_head_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_sword_shield_agent_key"],
         "LocalisedName": "No Headgear",
         "Description": "None",
         "Type": "head", 
@@ -27,7 +27,7 @@
     },
     {
         "ItemName": "lord_2_kitbasher_body_naked_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_sword_shield_agent_key"],
         "LocalisedName": "Bare",
         "Description": "None",
         "Type": "torso", 
@@ -53,7 +53,7 @@
     },
     {
         "ItemName": "lord_2_kitbasher_legs_naked_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_sword_shield_agent_key"],
         "LocalisedName": "Bare",
         "Description": "None",
         "Type": "legs", 
@@ -79,7 +79,7 @@
     },
     {
         "ItemName": "lord_2_shield_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_sword_shield_agent_key"],
         "LocalisedName": "Basic Shield",
         "Description": "None",
         "Type": "shield", 
@@ -105,7 +105,7 @@
     },
     {
         "ItemName": "lord_2_kitbasher_sword_base",
-        "SubtypeKey": "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_sword_shield_agent_key"],
         "LocalisedName": "Basic Sword",
         "Description": "None",
         "Type": "1handed", 

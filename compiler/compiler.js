@@ -103,7 +103,7 @@ function ReadArmouryDefinitions() {
                 "CampaignAnimation",
                 "OnlyCompatibleWithItem",
                 "AudioType",
-                "SubtypeKey",
+                "SubtypeKeys",
                 "VariantMeshDefinitionShouldCreate",
                 "PreferencedItems",
                 "Powerlevel"
@@ -349,6 +349,21 @@ function CheckPreferencedItemsPointsToValidItem() {
 
 }
 
+function CheckIfSubtypeIsValidInArmouryItem() {
+
+    const subtypes = Array.from(new Set(ArmouryData.map(item => item.SubtypeKey)))
+
+    for (const item of ArmouryDefs) {
+        if(!Array.isArray(item.SubtypeKeys)) {
+            throw "ItemName " + item.ItemName + " has invalid Subtypekeys. is not an array but " +  item.SubtypeKeys
+        }
+        
+        if(!item.SubtypeKeys.every(elem => subtypes.includes(elem))) {
+            throw "ItemName " + item.ItemName + " has invalid undefined subtype defined in  Subtypekeys: " + JSON.stringify(item.SubtypeKeys) + " possible subtypes are " + JSON.stringify(subtypes)
+        }
+    }
+}
+
 console.log("Validating data")
 CheckForDuplicateSubtypeKey()
 CheckForDuplicateItemName()
@@ -358,6 +373,7 @@ CheckForThumbnailPath()
 CheckForDefaultSets()
 CheckForVariantMesh()
 CheckPreferencedItemsPointsToValidItem()
+CheckIfSubtypeIsValidInArmouryItem()
 console.log("Data validated")
 
 
@@ -1569,15 +1585,17 @@ function TransformArmouryDefsToSubtype() {
 
     for (const item of ArmouryDefs) {
         if (item.IsItemDefinedFromAncillary) {
-            const subtypeKey = item.SubtypeKey
-            const itemName = item.ItemName
-            const associatedAncillaryKey = item.AssociatedAncillaryKey
+            const subtypeKeys = item.SubtypeKeys
+            for (const subtypeKey of subtypeKeys) {
+                const itemName = item.ItemName
+                const associatedAncillaryKey = item.AssociatedAncillaryKey
 
-            if (!result[subtypeKey]) {
-                result[subtypeKey] = {}
+                if (!result[subtypeKey]) {
+                    result[subtypeKey] = {}
+                }
+
+                result[subtypeKey][itemName] = associatedAncillaryKey
             }
-
-            result[subtypeKey][itemName] = associatedAncillaryKey
         }
     }
 
