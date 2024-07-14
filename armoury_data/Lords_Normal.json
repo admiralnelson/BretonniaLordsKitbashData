@@ -1,0 +1,8 @@
+[
+    {
+        "SubtypeKey": "wh_main_brt_lord",
+        "Skeleton": "humanoid01",
+        "DefaultArmoryItemSet": "admiralnelson_armory_normal_lord_1",
+        "bCanUseShield": true
+    }
+]
