@@ -339,11 +339,23 @@ function CheckForVariantMesh() {
 
 function CheckPreferencedItemsPointsToValidItem() {
     const itemNames = ArmouryDefs.map(item => item.ItemName)
+    const itemNamesToSkeleton =  ArmouryDefs.reduce((obj, item) => {
+        obj[item.ItemName] = item.Skeleton;
+        return obj;
+    }, {});
 
     for (const item of ArmouryDefs) {
         if(item.PreferencedItems == null || item.PreferencedItems.length == 0) continue
         if(!item.PreferencedItems.every(elem => itemNames.includes(elem))) {
             throw "ItemName " + item.ItemName + " has invalid undefined item defined in  PreferencedItems: " + JSON.stringify(item.PreferencedItems)
+        }
+
+        for (const item2 of item.PreferencedItems) {
+            if(!itemNamesToSkeleton[item2]) 
+                throw "ItemName " + item2 + " has invalid undefined item defined in  PreferencedItems: " + JSON.stringify(item.PreferencedItems)
+
+            if(itemNamesToSkeleton[item2] != item.Skeleton) 
+                throw "ItemName " + item2 + " has invalid mismatch skeleton " + item2 + " is " + itemNamesToSkeleton[item2] + " but parent item is " + item.Skeleton + "\n" + JSON.stringify(item)
         }
     }
 
