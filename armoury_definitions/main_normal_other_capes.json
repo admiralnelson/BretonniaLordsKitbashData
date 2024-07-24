@@ -1,0 +1,90 @@
+[
+    {
+        "ItemName": "admiralnelson_normal_paladin_cape_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_2handed_agent_key", 
+            "wh_main_brt_lord"
+        ],
+        "LocalisedName": "The Paladin Cape",
+        "Description": "None",
+        "Type": "cape", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_paladin_cape_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/normal_base_items/admiralnelson_normal_paladin_cape_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes/capes/normal_cape_1/normal_cape_1.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [],
+        "Powerlevel": 25
+
+    },
+
+    {
+        "ItemName": "admiralnelson_normal_legacy_cape_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_2handed_agent_key", 
+            "wh_main_brt_lord"
+        ],
+        "LocalisedName": "Count Bernard's Cape",
+        "Description": "None",
+        "Type": "cape", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_legacy_cape_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/normal_base_items/admiralnelson_normal_legacy_cape_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes/capes/normal_cape_3/normal_cape_3.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [],
+        "Powerlevel": 50
+
+    },
+
+    {
+        "ItemName": "admiralnelson_normal_grail_knight_cape_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_2handed_agent_key", 
+            "wh_main_brt_lord"
+        ],
+        "LocalisedName": "The Grail Knight Cape I",
+        "Description": "None",
+        "Type": "cape", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_grail_knight_cape_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/normal_base_items/admiralnelson_normal_grail_knight_cape_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes/capes/normal_cape_2/normal_cape_2.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [],
+        "Powerlevel": 10
+    }
+]
