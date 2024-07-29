@@ -211,6 +211,20 @@ function CheckForDuplicateItemName() {
     }
 }
 
+/**
+ * Runs check against ArmouryDefs
+ * If armoury def is a type of head, the name should contain "head" in it
+ */
+function CheckForDuplicateItemName() {
+
+    for (const object of ArmouryDefs) {
+        if(object.Type != "head") continue
+
+        if(!object.ItemName.includes("head")) {
+            throw "this object " + object.ItemName + " is a type of head but does not contain 'head' in it, this will result in invisible thumbnail/card"
+        }
+    }
+}
 
 /**
  * Ensure that thumbnails defined in the ArmouryDef are valid
@@ -241,7 +255,7 @@ function CheckForThumbnailPath() {
         }
         
         if(def.ItemName.length > 40) {
-            console.log(`Head ItemName is too long (which is tied to your porthole/unitcard pngs): ${unitCardThumbnailPath}, ItemName is ${def.ItemName}`)
+            console.log(`Head ItemName is too long (which is tied to your porthole/unitcard pngs): ${unitCardThumbnailPath}, ItemName is ${def.ItemName} max is 40, yours is ${def.ItemName.length}`)
             errored = true
         }
     }
@@ -377,6 +391,7 @@ function CheckIfSubtypeIsValidInArmouryItem() {
 }
 
 console.log("Validating data")
+CheckForDuplicateItemName()
 CheckForDuplicateSubtypeKey()
 CheckForDuplicateItemName()
 CheckForInvalidTypes()
