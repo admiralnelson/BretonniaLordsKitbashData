@@ -13,7 +13,7 @@
         "UiIcon": "assets/icons/2handed_lords_massif/lord_1_2handed_kitbasher_head_base.png",
         "Thumbnail": "assets/porthole/lord_1_2handed_kitbasher_head_base.png",
         "UnitCardThumbnail": "assets/unit/lord_1_2handed_kitbasher_head_base.png",
-        "VariantMesh": "variantmeshes/heads/head_2/head_2.wsmodel",
+        "VariantMesh": "variantmeshes/heads/head_1/head_1.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
