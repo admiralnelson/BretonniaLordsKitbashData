@@ -3,7 +3,8 @@
         "ItemName": "admiralnelson_paladin_cape_item_key",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
-            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_agent_key"
         ],
         "LocalisedName": "The Paladin Cape",
         "Description": "None",
@@ -33,7 +34,8 @@
         "ItemName": "admiralnelson_legacy_cape_item_key",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
-            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_agent_key"
         ],
         "LocalisedName": "Count Bernard's Cape",
         "Description": "None",
@@ -63,7 +65,8 @@
         "ItemName": "admiralnelson_grail_knight_cape_item_key",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
-            "admiralnelson_bret_lord_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_agent_key"
         ],
         "LocalisedName": "The Grail Knight Cape I",
         "Description": "None",
