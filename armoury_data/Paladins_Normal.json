@@ -1,0 +1,14 @@
+[
+    {
+        "SubtypeKey": "wh_main_brt_paladin",
+        "Skeleton": "humanoid01",
+        "DefaultArmoryItemSet": "admiralnelson_armory_normal_paladin_1",
+        "bCanUseShield": true
+    },
+    {
+        "SubtypeKey": "admiralnelson_bret_paladin_2handed_agent_key",
+        "Skeleton": "humanoid01",
+        "DefaultArmoryItemSet": "admiralnelson_armory_normal_paladin_1_2handed",
+        "bCanUseShield": false
+    }
+]

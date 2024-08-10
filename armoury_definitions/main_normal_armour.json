@@ -3,7 +3,8 @@
         "ItemName": "normal_wh_dlc07_anc_armour_armour_of_the_midsummer_sun",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "Midsummer Sun",
         "Description": "None",
@@ -34,7 +35,8 @@
         "ItemName": "normal_wh_dlc07_anc_armour_gilded_cuirass",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "Gilded Cuirass",
         "Description": "None",
@@ -65,7 +67,8 @@
         "ItemName": "normal_wh_main_anc_armour_armour_of_destiny",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "The Armour of Destiny",
         "Description": "None",
@@ -95,7 +98,8 @@
         "ItemName": "admiralnelson_normal_armour_of_revered_tabard_item_key",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "The Revered Tabard of Saint Blanc",
         "Description": "None",
@@ -126,7 +130,8 @@
         "ItemName": "admiralnelson_normal_gilded_greaves_item_key",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "Gilded Greaves",
         "Description": "None",
@@ -156,7 +161,8 @@
         "ItemName": "admiralnelson_normal_silvered_greaves_item_key",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "Gilded Greaves",
         "Description": "None",
@@ -186,7 +192,8 @@
         "ItemName": "normal_wh_dlc07_anc_armour_cuirass_of_fortune",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "Cuirass of Fortune",
         "Description": "None",
@@ -216,7 +223,8 @@
         "ItemName": "normal_wh_main_anc_armour_armour_of_fortune",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "The Armour of Fortune",
         "Description": "None",
@@ -246,7 +254,8 @@
         "ItemName": "normal_wh_main_anc_armour_armour_of_silvered_steel",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "The Silvered Steel",
         "Description": "None",
@@ -276,7 +285,8 @@
         "ItemName": "normal_wh_main_anc_armour_gamblers_armour",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "The Gambler's Armour",
         "Description": "None",
@@ -306,7 +316,8 @@
         "ItemName": "normal_wh_main_anc_armour_glittering_scales",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
-            "wh_main_brt_lord"
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin"
         ],
         "LocalisedName": "The Gliterring Scales",
         "Description": "None",
