@@ -198,7 +198,7 @@
         "UiIcon": "assets/icons/2handed_paladins_massif/paladin_1_2h_kitbasher_head_full_cover.png",
         "Thumbnail": "assets/porthole/paladin_1_2h/paladin_1_2h_kitbasher_head_full_cover.png",
         "UnitCardThumbnail": "assets/unit/paladin_1_2h/paladin_1_2h_kitbasher_head_full_cover.png",
-        "VariantMesh": "variantmeshes\\armour_helmet\\partial_face\\admiralnelson_bascinet_closed_crest_pegasus_helmet_anciliary_key\\massiff_paladin_head_3\\massif_paladin_head_3.wsmodel",
+        "VariantMesh": "variantmeshes\\armour_helmet\\partial_face\\admiralnelson_bascinet_closed_crest_pegasus_helmet_anciliary_key\\massif_paladin_head_3\\massif_paladin_head_3.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
