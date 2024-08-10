@@ -4,7 +4,8 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Big Pauldrons",
         "Description": "None",
@@ -34,7 +35,8 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Gilded Pauldrons With Rondels",
         "Description": "None",
@@ -65,7 +67,8 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Pauldrons With Single Neck Guard",
         "Description": "None",
@@ -96,7 +99,8 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Pauldrons With Neck Guard",
         "Description": "None",
@@ -127,7 +131,8 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Gilded Pauldrons",
         "Description": "None",
@@ -158,7 +163,8 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Fleur de Lys Rondels",
         "Description": "None",
@@ -189,7 +195,8 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Gilded Rondels",
         "Description": "None",
