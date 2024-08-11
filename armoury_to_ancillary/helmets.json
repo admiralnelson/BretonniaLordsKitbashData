@@ -1,12 +1,12 @@
 [
     {
-        "AncillaryKey" : "wh_main_anc_armour_armour_of_silvered_steel",
-        "PowerLevel" : 100,
+        "AncillaryKey" : "admiralnelson_chainmail_basic_helmet_anciliary_key",
+        "PowerLevel" : 10,
         "Effects" : [
             {
                 "EffectKey" : "wh_main_effect_character_stat_armour",
                 "Scope" : "character_to_character_own",
-                "Value" : 20.0000
+                "Value" : 5
             }
         ]
 

@@ -1410,11 +1410,11 @@ function GenerateCsv_armory_items_to_effects_tables(data, projectName) {
 
     let out = ""
     for (const item of data) {
-        const ancillaryData = GetAncillaryByKey(item.key)
+        const ancillaryData = GetAncillaryByKey(item.AssociatedAncillaryKey)
         if(ancillaryData == null) continue
 
         for (const effect of ancillaryData.Effects) {
-            out += `${item.key}	${effect.EffectKey}	${effect.Scope}	${effect.Value}		\n`
+            out += `${item.ItemName}	${effect.EffectKey}	${effect.Scope}	${effect.Value}		\n`
         }
     }
 
@@ -1512,7 +1512,7 @@ GenerateCsv_armory_items_tables(GenerateArmoryItems(), PROJECT_NAME)
 GenerateCsv_armory_items_tables(GenerateDummyArmoryItems(), PROJECT_NAME + "_default")
 
 console.log("Processing armory_items_to_effects_tables")
-GenerateCsv_armory_items_to_effects_tables(GenerateArmoryItems(), PROJECT_NAME)
+GenerateCsv_armory_items_to_effects_tables(ArmouryDefs, PROJECT_NAME)
 
 console.log("Processing battle_skeleton_parts_tables")
 GenerateCsv_battle_skeleton_parts_tables(GenerateBattleSkeletonParts(), PROJECT_NAME)
