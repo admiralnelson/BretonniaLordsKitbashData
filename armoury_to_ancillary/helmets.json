@@ -1,0 +1,14 @@
+[
+    {
+        "AncillaryKey" : "wh_main_anc_armour_armour_of_silvered_steel",
+        "PowerLevel" : 100,
+        "Effects" : [
+            {
+                "EffectKey" : "wh_main_effect_character_stat_armour",
+                "Scope" : "character_to_character_own",
+                "Value" : 20.0000
+            }
+        ]
+
+    }
+]
