@@ -22,8 +22,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     {
@@ -48,8 +48,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     {
@@ -74,8 +74,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     {
@@ -100,8 +100,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     
@@ -127,8 +127,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     {
@@ -153,8 +153,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     {
@@ -179,8 +179,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     
@@ -206,8 +206,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     {
@@ -232,8 +232,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     },
 
     {
@@ -258,7 +258,7 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
     }
 ]

@@ -26,8 +26,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 100
+        "PreferencedItems": []
+        
 
     },
     {
@@ -57,8 +57,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 80
+        "PreferencedItems": []
+        
 
     },
 
@@ -89,8 +89,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 70
+        "PreferencedItems": []
+        
 
     },
 
@@ -121,8 +121,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 50
+        "PreferencedItems": []
+        
 
     },
 
@@ -153,8 +153,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 50
+        "PreferencedItems": []
+        
 
     },
 
@@ -185,8 +185,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 50
+        "PreferencedItems": []
+        
 
     },
 
@@ -217,8 +217,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 50
+        "PreferencedItems": []
+        
 
     }
     

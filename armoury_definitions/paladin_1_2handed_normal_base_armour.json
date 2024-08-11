@@ -21,8 +21,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 0
+        "PreferencedItems": []
+        
         
     },
     {
@@ -47,8 +47,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 0
+        "PreferencedItems": []
+        
 
     },
     {
@@ -73,8 +73,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 0
+        "PreferencedItems": []
+        
 
     },
     {
@@ -99,8 +99,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
-        "PreferencedItems": [],
-        "Powerlevel": 0
+        "PreferencedItems": []
+        
 
     }
 ]

@@ -26,8 +26,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
 
     },
 
@@ -58,8 +58,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 50
+        "PreferencedItems": []
+        
 
     },
 
@@ -90,7 +90,7 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 10
+        "PreferencedItems": []
+        
     }
 ]

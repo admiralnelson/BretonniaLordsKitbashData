@@ -28,8 +28,8 @@
         "AudioType": "audio_armour_type:plate",
         "PreferencedItems": [
             "admiralnelson_gilded_greaves_item_key"
-        ],
-        "Powerlevel": 100
+        ]
+        
 
     },
     {
@@ -61,8 +61,8 @@
         "AudioType": "audio_armour_type:plate",
         "PreferencedItems": [
             "admiralnelson_gilded_greaves_item_key"
-        ],
-        "Powerlevel": 50
+        ]
+        
 
     },
     {
@@ -94,8 +94,8 @@
         "AudioType": "audio_armour_type:plate",
         "PreferencedItems": [
             "admiralnelson_gilded_greaves_item_key"
-        ],
-        "Powerlevel": 110
+        ]
+        
     },
     {
         "ItemName": "admiralnelson_armour_of_revered_tabard_item_key",
@@ -124,8 +124,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
 
     },
 
@@ -157,8 +157,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
 
     },
 
@@ -189,8 +189,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 10
+        "PreferencedItems": []
+        
 
     },
 
@@ -221,8 +221,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
 
     },
 
@@ -253,8 +253,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
 
     },
 
@@ -285,8 +285,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
 
     },
 
@@ -317,8 +317,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
 
     },
 
@@ -349,8 +349,8 @@
         "CampaignAnimation": null,
         "OnlyCompatibleWithItem": null,
         "AudioType": "audio_armour_type:plate",
-        "PreferencedItems": [],
-        "Powerlevel": 25
+        "PreferencedItems": []
+        
 
     }
 
