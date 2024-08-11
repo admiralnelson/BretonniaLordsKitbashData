@@ -4,7 +4,8 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin"
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Big Pauldrons",
         "Description": "None",
@@ -34,7 +35,8 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin"
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Gilded Pauldrons With Rondels",
         "Description": "None",
@@ -65,7 +67,8 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin"
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Pauldrons With Single Neck Guard",
         "Description": "None",
@@ -96,7 +99,8 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin"
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Pauldrons With Neck Guard",
         "Description": "None",
@@ -127,7 +131,8 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin"
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Gilded Pauldrons",
         "Description": "None",
@@ -158,7 +163,8 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin"
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Fleur de Lys Rondels",
         "Description": "None",
@@ -189,7 +195,8 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin"
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Gilded Rondels",
         "Description": "None",
