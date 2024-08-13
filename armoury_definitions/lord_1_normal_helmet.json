@@ -187,7 +187,7 @@
         "ItemName": "lord_1_normal_kitbasher_head_full_cov",
         "SubtypeKeys": ["wh_main_brt_lord"],
         "LocalisedName": "Full Face Bascinet",
-        "Description": "Todo",
+        "Description": "The face guard not only provides extra defense but also gives the wearer an intimidating appearance on the battlefield.",
         "Type": "head", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_bascinet_closed_crest_pegasus_helmet_anciliary_key",

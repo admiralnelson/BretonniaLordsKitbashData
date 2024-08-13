@@ -188,7 +188,7 @@
         "ItemName": "paladin_1_2h_nor_kitbasher_head_full_cov",
         "SubtypeKeys": ["admiralnelson_bret_paladin_2handed_agent_key"],
         "LocalisedName": "Full Face Bascinet",
-        "Description": "Todo",
+        "Description": "The face guard not only provides extra defense but also gives the wearer an intimidating appearance on the battlefield.",
         "Type": "head", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_bascinet_closed_crest_pegasus_helmet_anciliary_key",

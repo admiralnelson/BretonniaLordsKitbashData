@@ -188,7 +188,7 @@
         "ItemName": "lord_2_kitbasher_head_full_cover",
         "SubtypeKeys": ["admiralnelson_bret_lord_massif_sword_shield_agent_key"],
         "LocalisedName": "Full Face Bascinet",
-        "Description": "Todo",
+        "Description": "The face guard not only provides extra defense but also gives the wearer an intimidating appearance on the battlefield.",
         "Type": "head", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_bascinet_closed_crest_pegasus_helmet_anciliary_key",
