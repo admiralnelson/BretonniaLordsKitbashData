@@ -314,6 +314,21 @@ function CheckForThumbnailPath() {
 }
 
 /**
+ * Runs check against AncillaryData
+ * If found another same AncillaryKey, it throws an exception
+ */
+function CheckForDuplicateSubtypeKey() {
+    const seen = new Set();
+
+    for (const object of AncillaryData) {
+        if (seen.has(object.AncillaryKey)) {
+            throw new Error(`Duplicate AncillaryKey found: ${object.AncillaryKey}`);
+        }
+        seen.add(object.AncillaryKey);
+    }
+}
+
+/**
  * Get ancillary data by its key
  * @param {string} key 
  * @returns {object}
