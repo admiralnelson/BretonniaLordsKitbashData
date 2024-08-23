@@ -1754,7 +1754,7 @@ function GenerateItemMappings() {
     const output = {}
 
     for (const iterator of ArmouryDefs) {
-        const ancillaryData = GetAncillaryByKey(iterator.ItemName)
+        const ancillaryData = GetAncillaryByKey(iterator.AssociatedAncillaryKey)
         let powerLevel = 0
         if(ancillaryData != null) {
             powerLevel = ancillaryData.PowerLevel
