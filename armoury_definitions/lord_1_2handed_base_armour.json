@@ -22,8 +22,6 @@
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
         "PreferencedItems": []
-        
-        
     },
     {
         "ItemName": "lord_1_2handed_kitbasher_body_naked_base",
@@ -32,7 +30,7 @@
         "Description": "None",
         "Type": "torso", 
         "IsItemDefinedFromAncillary": false,
-        "AssociatedAncillaryKey": null,
+        "AssociatedAncillaryKey": "no_armour",
         "AssociatedWithArmouryItemSet": "admiralnelson_armory_massif_lord_1_2handed",
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
@@ -48,8 +46,30 @@
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
         "PreferencedItems": []
-        
-
+    },
+    {
+        "ItemName": "lord_1_2handed_kitbasher_base_armour",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key"],
+        "LocalisedName": "Basic Armour",
+        "Description": "Basic Armour",
+        "Type": "torso", 
+        "IsItemDefinedFromAncillary": false,
+        "AssociatedAncillaryKey": "admiralnelson_basic_armour_item_key",
+        "AssociatedWithArmouryItemSet": "admiralnelson_armory_massif_lord_1_2handed",
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/2handed_lords_massif/lord_1_2handed_kitbasher_base_armour.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail":null,
+        "VariantMesh": "variantmeshes\\armour_torso\\massif_lord_starting_armour_2\\massif_lord_starting_armour_2.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
     },
     {
         "ItemName": "lord_1_2handed_kitbasher_legs_naked_base",
@@ -58,7 +78,7 @@
         "Description": "None",
         "Type": "legs", 
         "IsItemDefinedFromAncillary": false,
-        "AssociatedAncillaryKey": null,
+        "AssociatedAncillaryKey": "no_legs",
         "AssociatedWithArmouryItemSet": "admiralnelson_armory_massif_lord_1_2handed",
         "Skeleton": "humanoid01c",
         "ItemCategory": "unique",
@@ -74,8 +94,30 @@
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
         "PreferencedItems": []
-        
-
+    },
+    {
+        "ItemName": "lord_1_2handed_kitbasher_legs_base_legs",
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key"],
+        "LocalisedName": "Basic Greaves",
+        "Description": "Basic Greaves",
+        "Type": "legs", 
+        "IsItemDefinedFromAncillary": false,
+        "AssociatedAncillaryKey": "admiralnelson_basic_greaves_item_key",
+        "AssociatedWithArmouryItemSet": "admiralnelson_armory_massif_lord_1_2handed",
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/2handed_lords_massif/lord_1_2handed_kitbasher_legs_base_legs.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail":null,
+        "VariantMesh": "variantmeshes\\armour_legs\\massif_starting_legs_1\\massif_starting_legs_1.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
     },
     {
         "ItemName": "lord_1_2handed_kitbasher_sword_base",
@@ -100,7 +142,5 @@
         "OnlyCompatibleWithItem": null,
         "AudioType": null,
         "PreferencedItems": []
-        
-
     }
 ]

@@ -106,7 +106,7 @@
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "The Revered Tabard of Saint Blanc",
-        "Description": "None",
+        "Description": "This sacred tabard, woven with the blessings of Saint Blanc, has seen countless battles fought in the name of faith. Its threads, infused with divine protection, offer its wearer unparalleled resolve and the favor of the Lady herself.",
         "Type": "torso", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_armour_of_revered_tabard_item_key",
@@ -139,7 +139,7 @@
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Gilded Greaves",
-        "Description": "None",
+        "Description": "These resplendent greaves are a testament to the skill of Bretonnia's finest smiths. Forged from the purest steel and adorned with gilded fleur-de-lis, they provide not only formidable protection but also serve as a symbol of the knightly honor and chivalry they represent.",
         "Type": "legs", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_gilded_greaves_item_key",
@@ -170,8 +170,8 @@
             "admiralnelson_bret_paladin_massif_agent_key",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
-        "LocalisedName": "Gilded Greaves",
-        "Description": "None",
+        "LocalisedName": "Silvered Steel Greaves",
+        "Description": "Crafted with precision, these Silvered Steel Greaves offer a sleek and sturdy defense for the knight who values both form and function. Their polished surface gleams in the light, a reflection of the knight's commitment to the ideals of chivalry.",
         "Type": "legs", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_silvered_greaves_item_key",
@@ -181,7 +181,7 @@
         "UiIcon": "assets/icons/base_items/admiralnelson_silvered_greaves_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes/armour_legs/massif_legs_2/test_legs_2.wsmodel",
+        "VariantMesh": "variantmeshes/armour_legs/massif_legs_1/test_legs_1.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,

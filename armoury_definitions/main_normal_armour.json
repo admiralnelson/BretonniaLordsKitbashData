@@ -181,7 +181,7 @@
         "UiIcon": "assets/icons/normal_base_items/admiralnelson_normal_silvered_greaves_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes/armour_legs/normal_legs_2/normal_legs_2.wsmodel",
+        "VariantMesh": "variantmeshes/armour_legs/normal_legs_1/normal_legs_1.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
