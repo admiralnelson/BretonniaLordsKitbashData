@@ -1788,6 +1788,10 @@ function GenerateItemMappings() {
             Powerlevel: powerLevel,
             Type: "shield"
         }
+        if(iterator.Type == "talisman") output[iterator.ItemName] = {
+            Powerlevel: powerLevel,
+            Type: "talisman"
+        }
     }
 
     return output
