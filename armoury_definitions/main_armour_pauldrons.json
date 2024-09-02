@@ -167,7 +167,7 @@
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Fleur de Lys Rondels",
-        "Description": " These ornate rondels, adorned with the fleur-de-lys symbol and connected by chains, signify nobility and purity",
+        "Description": "These ornate rondels, adorned with the fleur-de-lys symbol and connected by chains, signify nobility and purity",
         "Type": "pauldrons", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_fleur_de_lys_rondels_pauldrons_item_key",
