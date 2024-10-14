@@ -1,0 +1,553 @@
+[
+    {
+        "ItemName": "massif_wh_dlc03_anc_weapon_the_brass_cleaver_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Brass Cleaver",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_dlc03_anc_weapon_the_brass_cleaver",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_dlc03_anc_weapon_the_brass_cleaver_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_dlc03_anc_weapon_the_brass_cleaver\\massif_wh_dlc03_anc_weapon_the_brass_cleaver.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_biting_blade_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Biting Blade",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_biting_blade",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_biting_blade_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_biting_blade\\massif_wh_main_anc_weapon_biting_blade.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_fencers_blades_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Fencer's Blade",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_fencers_blades",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_fencers_blades_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_fencers_blades\\massif_wh_main_anc_weapon_fencers_blades.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_giant_blade_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Giant Blade",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_giant_blade",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_giant_blade_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_giant_blade\\massif_wh_main_anc_weapon_giant_blade.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_gold_sigil_sword_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Gold Sigil Sword",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_gold_sigil_sword",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_gold_sigil_sword_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_gold_sigil_sword\\massif_wh_main_anc_weapon_gold_sigil_sword.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_obsidian_blade_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Obsidian Blade",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_obsidian_blade",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_obsidian_blade_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_obsidian_blade\\massif_wh_main_anc_weapon_obsidian_blade.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_ogre_blade_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Obsidian Blade",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_ogre_blade",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_ogre_blade_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_ogre_blade\\massif_wh_main_anc_weapon_ogre_blade.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_shrieking_blade_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Shrieking Blade",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_shrieking_blade",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_shrieking_blade_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_shrieking_blade\\massif_wh_main_anc_weapon_shrieking_blade.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Sword of Lady's Champion",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_dlc07_anc_weapon_sword_of_the_ladys_champion",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion\\massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_relic_sword_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Relic Sword",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_relic_sword",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_relic_sword_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_relic_sword\\massif_wh_main_anc_weapon_relic_sword.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_sword_of_anti-heroes_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Relic Sword",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_anti-heroes",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_sword_of_anti-heroes_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_anti-heroes\\massif_wh_main_anc_weapon_sword_of_anti-heroes.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_tormentor_sword_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Tormentor Sword",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_tormentor_sword",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_tormentor_sword_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_tormentor_sword\\massif_wh_main_anc_weapon_tormentor_sword.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_berserker_sword_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Berserker Sword",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_berserker_sword",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_berserker_sword_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_berserker_sword\\massif_wh_main_anc_weapon_berserker_sword.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_sword_of_bloodshed_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Sword of Bloodshed",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_bloodshed",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_sword_of_bloodshed_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_bloodshed\\massif_wh_main_anc_weapon_sword_of_bloodshed.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_sword_of_might_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Sword of Might",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_might",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_sword_of_might_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_might\\massif_wh_main_anc_weapon_sword_of_might.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_sword_of_strife_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Sword of Strife",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_strife",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_sword_of_strife_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_strife\\massif_wh_main_anc_weapon_sword_of_strife.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_sword_of_battle_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Sword of Battle",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_battle",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_sword_of_battle_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_battle\\massif_wh_main_anc_weapon_sword_of_battle.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    {
+        "ItemName": "massif_wh_main_anc_weapon_sword_of_striking_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Sword of Striking",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_striking",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_sword_of_striking_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_striking\\massif_wh_main_anc_weapon_sword_of_striking.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    },
+
+    
+    {
+        "ItemName": "massif_wh_main_anc_weapon_sword_of_swift_slaying_1h",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+        ],
+        "LocalisedName": "Sword of Swift Slaying",
+        "Description": "Todo",
+        "Type": "1handed", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_swift_slaying",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_sword_of_swift_slaying_1h.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_swift_slaying\\massif_wh_main_anc_weapon_sword_of_swift_slaying.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": null,
+        "PreferencedItems": []
+        
+    }
+]
