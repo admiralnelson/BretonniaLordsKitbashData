@@ -220,7 +220,7 @@
         "AssociatedAncillaryKey": "admiralnelson_gilded_bascinet_pigface_guard_helmet_anciliary_key",
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01",
-        "ItemCategory": "c",
+        "ItemCategory": "common",
         "UiIcon": "assets/icons/1handed_paladins_nor/paladin_1_nor_kitbasher_head_pigface.png",
         "Thumbnail": "assets/porthole/paladin_1_nor/paladin_1_nor_kitbasher_head_pigface.png",
         "UnitCardThumbnail": "assets/unit/paladin_1_nor/paladin_1_nor_kitbasher_head_pigface.png",
