@@ -72,7 +72,7 @@
         ],
         "LocalisedName": "Pauldrons With Single Neck Guard",
         "Description": "Crafted from polished metal and adorned with intricate engravings, the neck guard puts additional protection to its wearer",
-        "Type": "uncommon", 
+        "Type": "pauldrons", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_pauldrons_with_single_neck_guard_pauldrons_item_key",
         "AssociatedWithArmouryItemSet": null,
