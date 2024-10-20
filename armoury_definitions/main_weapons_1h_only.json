@@ -87,35 +87,6 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_giant_blade_1h",
-        "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
-        ],
-        "LocalisedName": "Giant Blade",
-        "Description": "A massive sword that is still surprisingly versatile to use in combat. Nevertheless, when it strikes it can cleave a foe in twain.",
-        "Type": "1handed", 
-        "IsItemDefinedFromAncillary": true,
-        "AssociatedAncillaryKey": "wh_main_anc_weapon_giant_blade",
-        "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
-        "ItemCategory": "rare",
-        "UiIcon": "assets/icons/weapons/1h_weapons/massif_wh_main_anc_weapon_giant_blade_1h.png",
-        "Thumbnail": null,
-        "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_giant_blade\\massif_wh_main_anc_weapon_giant_blade.wsmodel",
-        "VariantMeshDefinitionShouldCreate": true,
-        "VariantMeshScale": 1,
-        "VariantMeshMountScale": 1,
-        "BattleAnimation": null,
-        "CampaignAnimation": null,
-        "OnlyCompatibleWithItem": null,
-        "AudioType": null,
-        "PreferencedItems": []
-        
-    },
-
-    {
         "ItemName": "massif_wh_main_anc_weapon_gold_sigil_sword_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
