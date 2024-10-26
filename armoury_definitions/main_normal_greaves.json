@@ -1,0 +1,125 @@
+[
+    {
+        "ItemName": "admiralnelson_normal_gilded_greaves_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_2handed_agent_key", 
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
+        ],
+        "LocalisedName": "Gilded Greaves",
+        "Description": "None",
+        "Type": "legs", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_gilded_greaves_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01",
+        "ItemCategory": "unique",
+        "UiIcon": "assets/icons/normal_base_items/admiralnelson_normal_gilded_greaves_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes/armour_legs/normal_legs_3/normal_legs_3.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
+        
+
+    },
+    {
+        "ItemName": "admiralnelson_normal_steel_greaves_with_gold_trim_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_2handed_agent_key", 
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
+        ],
+        "LocalisedName": "Simple Gilded Greaves",
+        "Description": "These finely crafted greaves are adorned with gilded fleur-de-lis emblems on the kneecaps, symbolizing nobility and valor.",
+        "Type": "legs", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_steel_greaves_with_gold_trim_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01",
+        "ItemCategory": "uncommon",
+        "UiIcon": "assets/icons/normal_base_items/admiralnelson_normal_steel_greaves_with_gold_trim_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\armour_legs\\normal_legs_2\\normal_legs_2.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
+        
+    },
+    {
+        "ItemName": "admiralnelson_normal_silvered_greaves_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_2handed_agent_key", 
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
+        ],
+        "LocalisedName": "Gilded Greaves",
+        "Description": "None",
+        "Type": "legs", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_silvered_greaves_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01",
+        "ItemCategory": "common",
+        "UiIcon": "assets/icons/normal_base_items/admiralnelson_normal_silvered_greaves_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes/armour_legs/normal_legs_1/normal_legs_1.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
+        
+
+    },
+    {
+        "ItemName": "admiralnelson_normal_ornate_steel_greaves_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_2handed_agent_key", 
+            "wh_main_brt_lord",
+            "wh_main_brt_paladin",
+            "admiralnelson_bret_paladin_2handed_agent_key"
+        ],
+        "LocalisedName": "Old Knight Greaves",
+        "Description": "The deep, burnished steel is accentuated with fine golden inlays, creating a pattern that is both regal and intimidating.",
+        "Type": "legs", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_ornate_steel_greaves_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01",
+        "ItemCategory": "uncommon",
+        "UiIcon": "assets/icons/normal_base_items/admiralnelson_normal_ornate_steel_greaves_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\armour_legs\\normal_legs_4\\normal_legs_4.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
+        
+
+    }
+]
