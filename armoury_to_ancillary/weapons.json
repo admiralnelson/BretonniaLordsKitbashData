@@ -314,5 +314,17 @@
                 "Value": 10
             }
         ]
+    },
+
+    {
+        "AncillaryKey": "wh_dlc07_anc_weapon_sword_of_the_quest",
+        "PowerLevel": 8,
+        "Effects": [
+            {
+                "EffectKey": "wh_main_effect_character_stat_weapon_strength",
+                "Scope": "character_to_character_own",
+                "Value": 10
+            }
+        ]
     }
 ]

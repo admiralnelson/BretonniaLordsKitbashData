@@ -1,9 +1,9 @@
 [
     {
-        "ItemName": "massif_wh_dlc03_anc_weapon_the_brass_cleaver_2h",
+        "ItemName": "normal_wh_dlc03_anc_weapon_the_brass_cleaver_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Brass Cleaver",
         "Description": "The Brass Cleaver is said to be an artefact from another realm - ancient and terrible, it thirsts for blood.",
@@ -11,12 +11,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_dlc03_anc_weapon_the_brass_cleaver",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "uncommon",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_dlc03_anc_weapon_the_brass_cleaver_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_dlc03_anc_weapon_the_brass_cleaver_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_dlc03_anc_weapon_the_brass_cleaver_2h\\massif_wh_dlc03_anc_weapon_the_brass_cleaver_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_dlc03_anc_weapon_the_brass_cleaver_2h\\normal_wh_dlc03_anc_weapon_the_brass_cleaver_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -28,10 +28,10 @@
         
     },
     {
-        "ItemName": "massif_wh_main_anc_weapon_biting_blade_2h",
+        "ItemName": "normal_wh_main_anc_weapon_biting_blade_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Biting Blade",
         "Description": "The jagged edge of the biting blade ensures that even the strongest armour struggles to repel this weapon.",
@@ -39,12 +39,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_biting_blade",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_biting_blade_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_biting_blade_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_biting_blade_2h\\massif_wh_main_anc_weapon_biting_blade_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_biting_blade_2h\\normal_wh_main_anc_weapon_biting_blade_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -57,10 +57,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_giant_blade_2h",
+        "ItemName": "normal_wh_main_anc_weapon_giant_blade_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Giant Blade",
         "Description": "A massive sword that is still surprisingly versatile to use in combat. Nevertheless, when it strikes it can cleave a foe in twain.",
@@ -68,12 +68,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_giant_blade",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "rare",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_giant_blade_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_giant_blade_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_giant_blade_2h\\massif_wh_main_anc_weapon_giant_blade_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_giant_blade_2h\\normal_wh_main_anc_weapon_giant_blade_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -86,10 +86,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_gold_sigil_sword_2h",
+        "ItemName": "normal_wh_main_anc_weapon_gold_sigil_sword_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Gold Sigil Sword",
         "Description": "This golden sword gifts its user with a foresight and speed in combat that no mortal should ever have.",
@@ -97,12 +97,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_gold_sigil_sword",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_gold_sigil_sword_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_gold_sigil_sword_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_gold_sigil_sword_2h\\massif_wh_main_anc_weapon_gold_sigil_sword_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_gold_sigil_sword_2h\\normal_wh_main_anc_weapon_gold_sigil_sword_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -115,10 +115,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_obsidian_blade_2h",
+        "ItemName": "normal_wh_main_anc_weapon_obsidian_blade_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Obsidian Blade",
         "Description": "A blade made of darkest obsidian with an edge that is said to not exist in this mortal plane - no armour can stand against it.",
@@ -126,12 +126,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_obsidian_blade",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "rare",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_obsidian_blade_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_obsidian_blade_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_obsidian_blade_2h\\massif_wh_main_anc_weapon_obsidian_blade_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_obsidian_blade_2h\\normal_wh_main_anc_weapon_obsidian_blade_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -144,10 +144,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_ogre_blade_2h",
+        "ItemName": "normal_wh_main_anc_weapon_ogre_blade_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Ogre Blade",
         "Description": "The Ogre Blade was used by Chaos Dwarfs to tame the kingdoms amongst the Mountains of Mourn. How it came to the Old World is a mystery.",
@@ -155,12 +155,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_ogre_blade",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "uncommon",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_ogre_blade_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_ogre_blade_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_ogre_blade_2h\\massif_wh_main_anc_weapon_ogre_blade_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_ogre_blade_2h\\normal_wh_main_anc_weapon_ogre_blade_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -173,10 +173,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_shrieking_blade_2h",
+        "ItemName": "normal_wh_main_anc_weapon_shrieking_blade_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Shrieking Blade",
         "Description": "This blade was stolen from a Tomb Banshee while she sang a haunting nursery tale to a forgotten child. Now the blade sings too, and shrieks when it strikes a foe",
@@ -184,12 +184,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_shrieking_blade",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "uncommon",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_shrieking_blade_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_shrieking_blade_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_shrieking_blade_2h\\massif_wh_main_anc_weapon_shrieking_blade_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_shrieking_blade_2h\\normal_wh_main_anc_weapon_shrieking_blade_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -202,10 +202,10 @@
     },
 
     {
-        "ItemName": "massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_2h",
+        "ItemName": "normal_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of Lady's Champion",
         "Description": "The Knight who prays beside water before battle may see the Lady's hand emerge, offering a perfect blade to her noble champion.",
@@ -213,12 +213,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_dlc07_anc_weapon_sword_of_the_ladys_champion",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "uncommon",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_2h\\massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_2h\\normal_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -231,10 +231,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_relic_sword_2h",
+        "ItemName": "normal_wh_main_anc_weapon_relic_sword_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Relic Sword",
         "Description": "The Relic Sword was discovered in an ancient barrow close to the swamps of Mourkain. There are not many beings that can shrug off a wound from this blade.",
@@ -242,12 +242,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_relic_sword",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_relic_sword_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_relic_sword_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_relic_sword_2h\\massif_wh_main_anc_weapon_relic_sword_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_relic_sword_2h\\normal_wh_main_anc_weapon_relic_sword_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -260,10 +260,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_sword_of_anti-heroes_2h",
+        "ItemName": "normal_wh_main_anc_weapon_sword_of_anti-heroes_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of Anti-Heroes Sword",
         "Description": "This sword was said to be smelted in a cursed furnace and then quenched in the bloody body of a dying champion.",
@@ -271,12 +271,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_anti-heroes",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "uncommon",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_sword_of_anti-heroes_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_sword_of_anti-heroes_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_anti-heroes_2h\\massif_wh_main_anc_weapon_sword_of_anti-heroes_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_sword_of_anti-heroes_2h\\normal_wh_main_anc_weapon_sword_of_anti-heroes_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -289,10 +289,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_tormentor_sword_2h",
+        "ItemName": "normal_wh_main_anc_weapon_tormentor_sword_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Tormentor Sword",
         "Description": "Those that take a wound from the jagged blade of the Tormentor Sword will not only feel pain - their thoughts will be wracked with terrible omens.",
@@ -300,12 +300,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_tormentor_sword",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_tormentor_sword_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_tormentor_sword_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_tormentor_sword_2h\\massif_wh_main_anc_weapon_tormentor_sword_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_tormentor_sword_2h\\normal_wh_main_anc_weapon_tormentor_sword_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -318,10 +318,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_berserker_sword_2h",
+        "ItemName": "normal_wh_main_anc_weapon_berserker_sword_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Berserker Sword",
         "Description": "This blade constantly drips with blood as if only just pulled from a corpse - those that wield it scream with rage, demanding to feed the sword its next victim.",
@@ -329,12 +329,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_berserker_sword",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_berserker_sword_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_berserker_sword_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_berserker_sword_2h\\massif_wh_main_anc_weapon_berserker_sword_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_berserker_sword_2h\\normal_wh_main_anc_weapon_berserker_sword_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -347,10 +347,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_sword_of_bloodshed_2h",
+        "ItemName": "normal_wh_main_anc_weapon_sword_of_bloodshed_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of Bloodshed",
         "Description": "A sword tinged red, for wherever it is swung bloodshed is guaranteed, with multiple foes falling in a single deadly arc.",
@@ -358,12 +358,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_bloodshed",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "rare",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_sword_of_bloodshed_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_sword_of_bloodshed_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_bloodshed_2h\\massif_wh_main_anc_weapon_sword_of_bloodshed_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_sword_of_bloodshed_2h\\normal_wh_main_anc_weapon_sword_of_bloodshed_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -376,10 +376,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_sword_of_might_2h",
+        "ItemName": "normal_wh_main_anc_weapon_sword_of_might_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of Might",
         "Description": "The Sword of Might is a grand blade in a rich pommel that imbues its owners with a boon of strength in the heat of battle.",
@@ -387,12 +387,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_might",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_sword_of_might_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_sword_of_might_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_might_2h\\massif_wh_main_anc_weapon_sword_of_might_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_sword_of_might_2h\\normal_wh_main_anc_weapon_sword_of_might_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -405,10 +405,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_sword_of_strife_2h",
+        "ItemName": "normal_wh_main_anc_weapon_sword_of_strife_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of Strife",
         "Description": "The Sword of Strife never has an owner for long, for those who wield it will always find it in their hand when their temper rises.",
@@ -416,12 +416,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_strife",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "uncommon",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_sword_of_strife_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_sword_of_strife_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_strife_2h\\massif_wh_main_anc_weapon_sword_of_strife_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_sword_of_strife_2h\\normal_wh_main_anc_weapon_sword_of_strife_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -434,10 +434,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_sword_of_battle_2h",
+        "ItemName": "normal_wh_main_anc_weapon_sword_of_battle_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of Battle",
         "Description": "The Sword of Battle is a battered weapon, yet its many owners always remark upon how easy it is to wield in a fight.",
@@ -445,12 +445,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_battle",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_sword_of_battle_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_sword_of_battle_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_battle_2h\\massif_wh_main_anc_weapon_sword_of_battle_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_sword_of_battle_2h\\normal_wh_main_anc_weapon_sword_of_battle_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -463,10 +463,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_sword_of_striking_2h",
+        "ItemName": "normal_wh_main_anc_weapon_sword_of_striking_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of Striking",
         "Description": "Found in the hands of a long-dead guardian, this sword guides its user, making them a much better fighter.",
@@ -474,12 +474,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_striking",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_sword_of_striking_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_sword_of_striking_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_striking_2h\\massif_wh_main_anc_weapon_sword_of_striking_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_sword_of_striking_2h\\normal_wh_main_anc_weapon_sword_of_striking_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -492,10 +492,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_sword_of_swift_slaying_2h",
+        "ItemName": "normal_wh_main_anc_weapon_sword_of_swift_slaying_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of Swift Slaying",
         "Description": "A sword of silver that never dims. When used in anger, the sword arm of its owner darts forth before an opponent can even raise their guard.",
@@ -503,12 +503,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_sword_of_swift_slaying",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_sword_of_swift_slaying_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_sword_of_swift_slaying_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_sword_of_swift_slaying_2h\\massif_wh_main_anc_weapon_sword_of_swift_slaying_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_sword_of_swift_slaying_2h\\normal_wh_main_anc_weapon_sword_of_swift_slaying_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -521,10 +521,10 @@
     },
 
     {
-        "ItemName": "massif_wh_main_anc_weapon_warrior_bane_2h",
+        "ItemName": "normal_wh_main_anc_weapon_warrior_bane_2h",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Warrior Bane",
         "Description": "This unsettling weapon spreads a curse on all around, disabusing enemy Warriors of their martial skills.",
@@ -532,12 +532,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_weapon_warrior_bane",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_main_anc_weapon_warrior_bane_2h.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_main_anc_weapon_warrior_bane_2h.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_main_anc_weapon_warrior_bane\\massif_wh_main_anc_weapon_warrior_bane.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_main_anc_weapon_warrior_bane\\normal_wh_main_anc_weapon_warrior_bane.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -550,10 +550,10 @@
     },
 
     {
-        "ItemName": "massif_admiralnelson_spiked_fury_mace_item_key",
+        "ItemName": "normal_admiralnelson_spiked_fury_mace_item_key",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Spiked Fury",
         "Description": "The brutal mace designed to crush armor and cripple foes with its vicious spiked head.",
@@ -561,12 +561,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_spiked_fury_mace_item_key",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "rare",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_admiralnelson_spiked_fury_mace_item_key.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_admiralnelson_spiked_fury_mace_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_gilded_spike_2handed_mace\\massif_gilded_spike_2handed_mace.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_gilded_spike_2handed_mace\\normal_gilded_spike_2handed_mace.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -579,10 +579,10 @@
     },
 
     {
-        "ItemName": "massif_admiralnelson_hand_of_retribution_mace_item_key",
+        "ItemName": "normal_admiralnelson_hand_of_retribution_mace_item_key",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Hand of Retribution",
         "Description": "A finely crafted mace adorned with gold, it delivers powerful, armor-piercing blows.",
@@ -590,12 +590,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_hand_of_retribution_mace_item_key",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "rare",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_admiralnelson_hand_of_retribution_mace_item_key.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_admiralnelson_hand_of_retribution_mace_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_warhammer_hand_2handed_mace\\massif_warhammer_hand_2handed_mace.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_warhammer_hand_2handed_mace\\normal_warhammer_hand_2handed_mace.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -608,10 +608,10 @@
     },
 
     {
-        "ItemName": "massif_admiralnelson_verdant_cleaver_axe_item_key",
+        "ItemName": "normal_admiralnelson_verdant_cleaver_axe_item_key",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Bane of the Undead",
         "Description": "An axe imbued with nature's wrath, the axe delivers devastating strikes to the undead, sapping their strength with every blow.",
@@ -619,12 +619,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_verdant_cleaver_axe_item_key",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "rare",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_admiralnelson_verdant_cleaver_axe_item_key.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_admiralnelson_verdant_cleaver_axe_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_bane_of_the_undead_axe\\massif_bane_of_the_undead_axe.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_bane_of_the_undead_axe\\normal_bane_of_the_undead_axe.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -637,10 +637,10 @@
     },
 
     {
-        "ItemName": "massif_admiralnelson_executioner_axe_item_key",
+        "ItemName": "normal_admiralnelson_executioner_axe_item_key",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Executioner Axe",
         "Description": "This axe was wielded by the ruthless enforcers of Bretonnian justice. Its blade cleaving through the ranks of the unworthy.",
@@ -648,12 +648,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_executioner_axe_item_key",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "uncommon",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_admiralnelson_executioner_axe_item_key.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_admiralnelson_executioner_axe_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_executioner_2handed_axe\\massif_executioner_2handed_axe.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_executioner_2handed_axe\\normal_executioner_2handed_axe.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
@@ -666,10 +666,10 @@
     },
 
     {
-        "ItemName": "massif_wh_dlc07_anc_weapon_sword_of_the_quest",
+        "ItemName": "normal_wh_dlc07_anc_weapon_sword_of_the_quest",
         "SubtypeKeys": [
-            "admiralnelson_bret_lord_massif_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key"
+            "admiralnelson_bret_lord_2handed_agent_key",
+            "admiralnelson_bret_paladin_2handed_agent_key"
         ],
         "LocalisedName": "Sword of The Quest",
         "Description": "Passed down from Knight to Knight, this hefty blade requires a hand-and-a-half to wield it correctly..",
@@ -677,12 +677,12 @@
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_dlc07_anc_weapon_sword_of_the_quest",
         "AssociatedWithArmouryItemSet": null,
-        "Skeleton": "humanoid01c",
+        "Skeleton": "humanoid01",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/weapons/2h_weapons/massif_wh_dlc07_anc_weapon_sword_of_the_quest.png",
+        "UiIcon": "assets/icons/weapons/2h_weapons_normal/normal_wh_dlc07_anc_weapon_sword_of_the_quest.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
-        "VariantMesh": "variantmeshes\\weapons\\massif_wh_dlc07_anc_weapon_sword_of_the_quest_2h\\massif_wh_dlc07_anc_weapon_sword_of_the_quest_2h.wsmodel",
+        "VariantMesh": "variantmeshes\\weapons\\normal_wh_dlc07_anc_weapon_sword_of_the_quest_2h\\normal_wh_dlc07_anc_weapon_sword_of_the_quest_2h.wsmodel",
         "VariantMeshDefinitionShouldCreate": true,
         "VariantMeshScale": 1,
         "VariantMeshMountScale": 1,
