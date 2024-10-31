@@ -1,7 +1,7 @@
 [
     {
         "ItemName": "paladin_1_2h_kitbasher_head_base",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "No Headgear",
         "Description": "None",
         "Type": "head", 
@@ -27,7 +27,7 @@
     },
     {
         "ItemName": "paladin_1_2h_kitbasher_body_naked_base",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Bare",
         "Description": "None",
         "Type": "torso", 
@@ -53,7 +53,7 @@
     },
     {
         "ItemName": "paladin_1_2h_kitbasher_basic_armour",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Basic Armour",
         "Description": "None",
         "Type": "torso", 
@@ -79,7 +79,7 @@
     },
     {
         "ItemName": "paladin_1_2h_kitbasher_legs_naked_base",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Bare",
         "Description": "None",
         "Type": "legs", 
@@ -105,7 +105,7 @@
     },
     {
         "ItemName": "paladin_1_2h_kitbasher_legs_basic_greaves",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Basic Greaves",
         "Description": "None",
         "Type": "legs", 
@@ -131,7 +131,7 @@
     },
     {
         "ItemName": "paladin_1_2h_kitbasher_sword_base",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Basic Axe",
         "Description": "None",
         "Type": "2handed", 

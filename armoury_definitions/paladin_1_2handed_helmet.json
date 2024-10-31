@@ -2,7 +2,7 @@
     
     {
         "ItemName": "paladin_1_2h_kitbasher_head_bascinet_c",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Pegasus Crested Bascinet",
         "Description": "This bascinet helmet bears the image of a majestic pegasus, symbolising the wearer's courage and virtue in battle. The crest is crafted with the finest Bretonnian steel, ensuring the helmet is both sturdy and stylish.",
         "Type": "head", 
@@ -28,7 +28,7 @@
 
     {
         "ItemName": "paladin_1_2h_kitbasher_head_gilded_s",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Sallet of the Golden Boar",
         "Description": "It is said that the wearer of this helm is imbued with the strength and resilience of the boar, making them a fearsome opponent on the battlefield.",
         "Type": "head", 
@@ -54,7 +54,7 @@
 
     {
         "ItemName": "paladin_1_2h_kitbasher_head_gilded_b",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Gilded Bascinet",
         "Description": "This bascinet features a colourful plume at the back and a small crown adorning its peak. Its polished surface reflects the glory of the wearer and commands respect on the battlefield.",
         "Type": "head", 
@@ -80,7 +80,7 @@
 
     {
         "ItemName": "paladin_1_2h_kitbasher_head_lady_helm",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Helm of the Radiant Lady",
         "Description": "The sallet is adorned with a crest of The Lady, shimmering in the light as if radiating her divine grace. Its open visor proudly displays the face of its noble wearer, while red plumes dance in the wind behind them, symbolizing their chivalrous spirit and passion for battle.",
         "Type": "head", 
@@ -107,7 +107,7 @@
     
     {
         "ItemName": "paladin_1_2h_kitbasher_head_greathelm",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Great Helmet",
         "Description": "The polished steel and lack of ornamentation speak to the Knight's humility and dedication to duty. ",
         "Type": "head", 
@@ -133,7 +133,7 @@
 
     {
         "ItemName": "paladin_1_2h_kitbasher_head_parravon",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Knight of Parravon",
         "Description": "Todo",
         "Type": "head", 
@@ -159,7 +159,7 @@
 
     {
         "ItemName": "paladin_1_2h_kitbasher_head_coif_g",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Chainmail Coif",
         "Description": "Todo",
         "Type": "head", 
@@ -186,7 +186,7 @@
     
     {
         "ItemName": "paladin_1_2h_kitbasher_head_full_cover",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Full Face Bascinet",
         "Description": "The face guard not only provides extra defense but also gives the wearer an intimidating appearance on the battlefield.",
         "Type": "head", 
@@ -212,7 +212,7 @@
 
     {
         "ItemName": "paladin_1_2h_kitbasher_head_pigface",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Pigface Bascinet",
         "Description": "Todo",
         "Type": "head", 
@@ -238,7 +238,7 @@
 
     {
         "ItemName": "paladin_1_2h_kitbasher_head_discord",
-        "SubtypeKeys": ["admiralnelson_bret_paladin_massif_agent_key"],
+        "SubtypeKeys": ["admiralnelson_bret_lord_massif_agent_key_1"],
         "LocalisedName": "Helm of Discord",
         "Description": "Todo",
         "Type": "head", 

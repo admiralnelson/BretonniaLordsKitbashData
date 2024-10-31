@@ -4,7 +4,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Dragon's Claw",
@@ -33,7 +33,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Sirienne's Locket",
@@ -62,7 +62,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Dawnstone",
@@ -91,7 +91,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Dragonbane Gem",
@@ -120,7 +120,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Luckstone",
@@ -149,7 +149,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Obsidian Amulet",
@@ -178,7 +178,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Obsidian Lodestone",
@@ -207,7 +207,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Obsidian Trinket",
@@ -236,7 +236,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Opal Amulet",
@@ -265,7 +265,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Pigeon Plucker Pendant",
@@ -294,7 +294,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Seed of Rebirth",
@@ -323,7 +323,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Talisman of Endurance",
@@ -353,7 +353,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Talisman of Preservation",
@@ -383,7 +383,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Talisman of Protection",

@@ -4,7 +4,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Silvered Steel Greaves",
@@ -34,7 +34,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Simple Gilded Greaves",
@@ -64,7 +64,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Ornate Gilded Greaves",
@@ -95,7 +95,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Old Knight Greaves",

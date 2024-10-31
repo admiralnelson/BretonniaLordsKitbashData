@@ -4,7 +4,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "The Paladin Cape",
@@ -36,7 +36,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "Count Bernard's Cape",
@@ -68,7 +68,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_agent_key", 
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
         ],
         "LocalisedName": "The Cape of the Grail's Grace",
