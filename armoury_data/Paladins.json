@@ -1,10 +1,5 @@
 [
-    {
-        "SubtypeKey": "admiralnelson_bret_lord_massif_agent_key_1",
-        "Skeleton": "humanoid01c",
-        "DefaultArmoryItemSet": "admiralnelson_armory_massif_paladin_1_2handed",
-        "bCanUseShield": false
-    },
+
     {
         "SubtypeKey": "admiralnelson_bret_paladin_massif_sword_shield_agent_key",
         "Skeleton": "humanoid01c",
