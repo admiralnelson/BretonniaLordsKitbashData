@@ -58,4 +58,14 @@ namespace BretonniaLordsKitbashData {
         }
     )
 
+    x.KitbashedCharacter.RegisterCallbackBeforeEnablingKitbash(
+         "admiralnelson_wh_main_brt_lord_agent_key_1",
+         (agentKey, characther) => {
+             x.console.warn("changing admiralnelson_wh_main_brt_lord_agent_key_1")
+             characther.ChangeModelAppearance("admiralnelson_brt_generic_lord_sword_shield_art_key_override_1")
+         }
+    )
+
+    
+
 }

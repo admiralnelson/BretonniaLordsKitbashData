@@ -4,7 +4,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
             "wh_main_brt_lord",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "The Paladin Cape",
@@ -36,7 +36,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
             "wh_main_brt_lord",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Count Bernard's Cape",
@@ -68,7 +68,7 @@
         "SubtypeKeys": [
             "admiralnelson_bret_lord_2handed_agent_key", 
             "wh_main_brt_lord",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "The Grail Knight Cape I",

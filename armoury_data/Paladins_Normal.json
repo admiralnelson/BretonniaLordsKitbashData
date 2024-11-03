@@ -1,8 +1,2 @@
 [
-    {
-        "SubtypeKey": "wh_main_brt_paladin",
-        "Skeleton": "humanoid01",
-        "DefaultArmoryItemSet": "admiralnelson_armory_normal_paladin_1",
-        "bCanUseShield": true
-    }
 ]

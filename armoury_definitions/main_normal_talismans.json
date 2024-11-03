@@ -4,7 +4,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Dragon's Claw",
@@ -33,7 +33,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Sirienne's Locket",
@@ -62,7 +62,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Dawnstone",
@@ -91,7 +91,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Dragonbane Gem",
@@ -120,7 +120,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Luckstone",
@@ -149,7 +149,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Obsidian Amulet",
@@ -178,7 +178,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Obsidian Lodestone",
@@ -207,7 +207,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Obsidian Trinket",
@@ -236,7 +236,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Opal Amulet",
@@ -265,7 +265,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Pigeon Plucker Pendant",
@@ -294,7 +294,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Seed of Rebirth",
@@ -323,7 +323,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Talisman of Endurance",
@@ -353,7 +353,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Talisman of Preservation",
@@ -383,7 +383,7 @@
         "SubtypeKeys": [
             "wh_main_brt_lord", 
             "admiralnelson_bret_lord_2handed_agent_key",
-            "wh_main_brt_paladin",
+            "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Talisman of Protection",

@@ -3,7 +3,7 @@
         "ItemName": "normal_kitbasher_jousting_marienberg_shield",
         "SubtypeKeys": [
             "wh_main_brt_lord",
-            "wh_main_brt_paladin"
+            "admiralnelson_wh_main_brt_lord_agent_key_1"
         ],
         "LocalisedName": "Jousting Shield of Marienberg",
         "Description": "",
@@ -31,7 +31,7 @@
         "ItemName": "normal_kitbasher_enchanted_shield",
         "SubtypeKeys": [
             "wh_main_brt_lord",
-            "wh_main_brt_paladin"
+            "admiralnelson_wh_main_brt_lord_agent_key_1"
         ],
         "LocalisedName": "Enhancted Shield",
         "Description": "",
@@ -59,7 +59,7 @@
         "ItemName": "normal_kitbasher_grail_knight_shield",
         "SubtypeKeys": [
             "wh_main_brt_lord",
-            "wh_main_brt_paladin"
+            "admiralnelson_wh_main_brt_lord_agent_key_1"
         ],
         "LocalisedName": "Grail Knight's Shield",
         "Description": "",
@@ -87,7 +87,7 @@
         "ItemName": "normal_kitbasher_kite_shield",
         "SubtypeKeys": [
             "wh_main_brt_lord",
-            "wh_main_brt_paladin"
+            "admiralnelson_wh_main_brt_lord_agent_key_1"
         ],
         "LocalisedName": "Kite Shield",
         "Description": "",
@@ -115,7 +115,7 @@
         "ItemName": "normal_kitbasher_bretonni_shield",
         "SubtypeKeys": [
             "wh_main_brt_lord",
-            "wh_main_brt_paladin"
+            "admiralnelson_wh_main_brt_lord_agent_key_1"
         ],
         "LocalisedName": "Decorated Bretonni Shield",
         "Description": "",
@@ -143,7 +143,7 @@
         "ItemName": "normal_kitbasher_bretonni_three_symbol_shield",
         "SubtypeKeys": [
             "wh_main_brt_lord",
-            "wh_main_brt_paladin"
+            "admiralnelson_wh_main_brt_lord_agent_key_1"
         ],
         "LocalisedName": "Modest Bretonni Shield",
         "Description": "",
@@ -171,7 +171,7 @@
         "ItemName": "normal_kitbasher_bretonni_reinforced_cross_shield",
         "SubtypeKeys": [
             "wh_main_brt_lord",
-            "wh_main_brt_paladin"
+            "admiralnelson_wh_main_brt_lord_agent_key_1"
         ],
         "LocalisedName": "Reinforced Bretonni Shield",
         "Description": "",
@@ -199,7 +199,7 @@
         "ItemName": "normal_kitbasher_fleur_de_lys_shield",
         "SubtypeKeys": [
             "wh_main_brt_lord",
-            "wh_main_brt_paladin"
+            "admiralnelson_wh_main_brt_lord_agent_key_1"
         ],
         "LocalisedName": "Fleur de Lys Shield",
         "Description": "",
