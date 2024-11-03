@@ -51,17 +51,9 @@ namespace BretonniaLordsKitbashData {
     )
 
     x.KitbashedCharacter.RegisterCallbackBeforeEnablingKitbash(
-        "admiralnelson_bret_paladin_2handed_agent_key",
+        "admiralnelson_bret_lord_2handed_agent_key_1",
         (agentKey, characther) => {
-            x.console.warn("changing admiralnelson_bret_paladin_2handed_agent_key")
-            characther.ChangeModelAppearance("admiralnelson_brt_generic_paladin_2handed_art_key_override")
-        }
-    )
-
-    x.KitbashedCharacter.RegisterCallbackBeforeEnablingKitbash(
-        "admiralnelson_bret_paladin_2handed_agent_key",
-        (agentKey, characther) => {
-            x.console.warn("changing admiralnelson_bret_paladin_2handed_agent_key")
+            x.console.warn("changing admiralnelson_bret_lord_2handed_agent_key_1")
             characther.ChangeModelAppearance("admiralnelson_brt_generic_paladin_2handed_art_key_override")
         }
     )

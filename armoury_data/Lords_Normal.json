@@ -10,5 +10,11 @@
         "Skeleton": "humanoid01",
         "DefaultArmoryItemSet": "admiralnelson_armory_normal_lord_1_2handed",
         "bCanUseShield": false
+    },
+    {
+        "SubtypeKey": "admiralnelson_bret_lord_2handed_agent_key_1",
+        "Skeleton": "humanoid01",
+        "DefaultArmoryItemSet": "admiralnelson_armory_normal_lord_2_2handed",
+        "bCanUseShield": false
     }
 ]
