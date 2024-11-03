@@ -3,7 +3,7 @@
         "ItemName": "massif_wh_dlc03_anc_weapon_the_brass_cleaver_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Brass Cleaver",
         "Description": "The Brass Cleaver is said to be an artefact from another realm - ancient and terrible, it thirsts for blood.",
@@ -32,7 +32,7 @@
         "ItemName": "massif_wh_main_anc_weapon_biting_blade_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Biting Blade",
         "Description": "The jagged edge of the biting blade ensures that even the strongest armour struggles to repel this weapon.",
@@ -61,7 +61,7 @@
         "ItemName": "massif_wh_main_anc_weapon_fencers_blades_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Fencer's Blade",
         "Description": "An enchanted duo of blades - one long and one short - give the wielder a dazzling array of skilful moves, to parry and deceive an opponent.",
@@ -90,7 +90,7 @@
         "ItemName": "massif_wh_main_anc_weapon_gold_sigil_sword_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Gold Sigil Sword",
         "Description": "This golden sword gifts its user with a foresight and speed in combat that no mortal should ever have.",
@@ -119,7 +119,7 @@
         "ItemName": "massif_wh_main_anc_weapon_obsidian_blade_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Obsidian Blade",
         "Description": "A blade made of darkest obsidian with an edge that is said to not exist in this mortal plane - no armour can stand against it.",
@@ -148,7 +148,7 @@
         "ItemName": "massif_wh_main_anc_weapon_ogre_blade_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Ogre Blade",
         "Description": "The Ogre Blade was used by Chaos Dwarfs to tame the kingdoms amongst the Mountains of Mourn. How it came to the Old World is a mystery.",
@@ -177,7 +177,7 @@
         "ItemName": "massif_wh_main_anc_weapon_shrieking_blade_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Shrieking Blade",
         "Description": "This blade was stolen from a Tomb Banshee while she sang a haunting nursery tale to a forgotten child. Now the blade sings too, and shrieks when it strikes a foe",
@@ -206,7 +206,7 @@
         "ItemName": "massif_wh_dlc07_anc_weapon_sword_of_the_ladys_champion_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Sword of Lady's Champion",
         "Description": "The Knight who prays beside water before battle may see the Lady's hand emerge, offering a perfect blade to her noble champion.",
@@ -235,7 +235,7 @@
         "ItemName": "massif_wh_main_anc_weapon_relic_sword_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Relic Sword",
         "Description": "The Relic Sword was discovered in an ancient barrow close to the swamps of Mourkain. There are not many beings that can shrug off a wound from this blade.",
@@ -264,7 +264,7 @@
         "ItemName": "massif_wh_main_anc_weapon_sword_of_anti-heroes_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Sword of Anti-Heroes Sword",
         "Description": "This sword was said to be smelted in a cursed furnace and then quenched in the bloody body of a dying champion.",
@@ -293,7 +293,7 @@
         "ItemName": "massif_wh_main_anc_weapon_tormentor_sword_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Tormentor Sword",
         "Description": "Those that take a wound from the jagged blade of the Tormentor Sword will not only feel pain - their thoughts will be wracked with terrible omens.",
@@ -322,7 +322,7 @@
         "ItemName": "massif_wh_main_anc_weapon_berserker_sword_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Berserker Sword",
         "Description": "This blade constantly drips with blood as if only just pulled from a corpse - those that wield it scream with rage, demanding to feed the sword its next victim.",
@@ -351,7 +351,7 @@
         "ItemName": "massif_wh_main_anc_weapon_sword_of_bloodshed_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Sword of Bloodshed",
         "Description": "A sword tinged red, for wherever it is swung bloodshed is guaranteed, with multiple foes falling in a single deadly arc.",
@@ -380,7 +380,7 @@
         "ItemName": "massif_wh_main_anc_weapon_sword_of_might_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Sword of Might",
         "Description": "The Sword of Might is a grand blade in a rich pommel that imbues its owners with a boon of strength in the heat of battle.",
@@ -409,7 +409,7 @@
         "ItemName": "massif_wh_main_anc_weapon_sword_of_strife_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Sword of Strife",
         "Description": "The Sword of Strife never has an owner for long, for those who wield it will always find it in their hand when their temper rises.",
@@ -438,7 +438,7 @@
         "ItemName": "massif_wh_main_anc_weapon_sword_of_battle_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Sword of Battle",
         "Description": "The Sword of Battle is a battered weapon, yet its many owners always remark upon how easy it is to wield in a fight.",
@@ -467,7 +467,7 @@
         "ItemName": "massif_wh_main_anc_weapon_sword_of_striking_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Sword of Striking",
         "Description": "Found in the hands of a long-dead guardian, this sword guides its user, making them a much better fighter.",
@@ -497,7 +497,7 @@
         "ItemName": "massif_wh_main_anc_weapon_sword_of_swift_slaying_1h",
         "SubtypeKeys": [
             "admiralnelson_bret_lord_massif_sword_shield_agent_key",
-            "admiralnelson_bret_paladin_massif_sword_shield_agent_key"
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "Sword of Swift Slaying",
         "Description": "A sword of silver that never dims. When used in anger, the sword arm of its owner darts forth before an opponent can even raise their guard.",
