@@ -1,6 +1,14 @@
 namespace BretonniaLordsKitbashData {
     
     const x = BretonniaInGameKitbash
+    const a = AdmiralNelsonLordPack.BretLordPack
+
+    //Bretonnia Lord packs specifics
+    a.AddBigSizedLord("admiralnelson_bret_lord_massif_agent_key_1")
+    a.AddBigSizedLord("admiralnelson_bret_lord_massif_sword_shield_agent_key_1")
+    a.AddNormalSizedLord("admiralnelson_bret_lord_2handed_agent_key_1")
+    a.AddNormalSizedLord("admiralnelson_wh_main_brt_lord_agent_key_1")
+
 
     x.KitbashedCharacter.RegisterCallbackBeforeEnablingKitbash(
         "admiralnelson_bret_lord_massif_sword_shield_agent_key",
