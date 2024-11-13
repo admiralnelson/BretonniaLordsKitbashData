@@ -287,6 +287,36 @@
         "PreferencedItems": []
         
 
+    },
+    {
+        "ItemName": "admiralnelson_questing_knight_tabard_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
+        ],
+        "LocalisedName": "Questing Knight's Tabard",
+        "Description": "",
+        "Type": "torso", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_questing_knight_tabard_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "common",
+        "UiIcon": "assets/icons/base_items/admiralnelson_questing_knight_tabard_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\armour_torso\\massif_tabard_of_questing_knight\\massif_tabard_of_questing_knight.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": [],
+        "Powerlevel": 25
     }
 
 ]
