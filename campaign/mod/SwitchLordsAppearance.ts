@@ -138,7 +138,13 @@ namespace BretonniaLordArmoury {
                 return isThisFirstTurn
             },
             (context) => {
+                if(!context.faction) return
+
+                const faction = WrapIFactionScriptToFaction(context.faction())
+                if(!faction) return
+
                 DoTheReplace()
+                AssertionToCheckIfReplacedLordStillHaveTheSameType(faction)
             },
             true
         )
@@ -169,6 +175,34 @@ namespace BretonniaLordArmoury {
 
         localStorage.setItem(FLAG_LORDS_HAVE_BEEN_REPLACED, VER)
 
+    }
+
+    function AssertionToCheckIfReplacedLordStillHaveTheSameType(faction: Faction) {
+        const factionKey = faction.FactionKey
+        const factionLeaderTypeMustBe = GenericBretonnianFactions[factionKey]
+        if(factionLeaderTypeMustBe == null || factionLeaderTypeMustBe == "") {
+            //skip assertion
+            return
+        }
+
+        const isThisPreTurn2 = GetTurnNumber() < 2
+        if(isThisPreTurn2) {
+            //early turn, skip assertion
+            return
+        }
+
+        const isThisPastTurn15 = GetTurnNumber() >= 15
+        if(isThisPastTurn15) {
+            //skip assertion, entering late game
+            return
+        }
+
+        const factionLeader = faction.FactionLeader
+        const leaderKey = factionLeader?.SubtypeKey
+        const isFactionLeaderReplaced = leaderKey == factionLeaderTypeMustBe
+        if(!isFactionLeaderReplaced) {
+            console.warn("WARNING, somehow our replaced leader doesn't match the type with intended type. Current " + leaderKey + " intended faction leader key " + factionLeaderTypeMustBe)
+        }
     }
 
     function ReplaceFactionLeader(faction: Faction) {
@@ -202,7 +236,26 @@ namespace BretonniaLordArmoury {
                         })
                     }, 600)
                     setTimeout( () => {
+                        factionLeader.SetImmortality(false)
                         factionLeader.Kill(true)
+                        theLordHimself.SetImmortality(true)
+
+                        //special for Chilfroy:
+                        if(faction.FactionKey == "wh_main_brt_artois") {
+                            //give him bunch of questing knights
+                            //and archers
+                            theLordHimself.AddTroops([
+                                "wh_dlc07_brt_cav_questing_knights_0",
+                                "wh_dlc07_brt_cav_questing_knights_0",
+                                "wh_dlc07_brt_cav_questing_knights_0",
+                                "wh_dlc07_brt_inf_peasant_bowmen_1",
+                                "wh_dlc07_brt_inf_peasant_bowmen_1",
+                                "wh_dlc07_brt_inf_peasant_bowmen_1",
+                            ])
+                            //and sum moneh, just to counter Kemmler for sometime
+                            theLordHimself.Faction.AddMoney(20000)
+                        }
+
                         console.log("Replace done for " + faction.FactionKey)
                     }, 300)
                 },

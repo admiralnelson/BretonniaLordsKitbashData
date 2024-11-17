@@ -179,6 +179,14 @@ namespace BretonniaLordArmoury {
         public TriggerMission(missionKey: string, fireImmediately: boolean = true): void {
             cm.trigger_mission(this.FactionKey, missionKey, fireImmediately)
         }
+
+        /**
+         * Add money to faction
+         * @param someMoney Money to be added
+         */
+        public AddMoney(someMoney: number): void {
+            cm.treasury_mod(this.FactionKey, someMoney)
+        }
         
         /**
          * Get pooled resource associated with the faction. I.E measuring the amount of chivalry
