@@ -193,7 +193,7 @@ namespace BretonniaLordArmoury {
                     "", 
                     options.familyName ?? "", 
                     "", 
-                    options.setAsFactionLeader ?? false, 
+                    options.setAsFactionLeader ?? false,
                     (cqi) => { 
                         CharacterLogger.Log(`spawned lord ${cqi}`) 
                         if(options.onSuccess) options.onSuccess(cqi)
@@ -539,6 +539,15 @@ namespace BretonniaLordArmoury {
          */
         public GetTraitLevel(traitKey: string): number {
             return this.GetInternalInterface().trait_level(traitKey)
+        }
+
+        /**
+         * Make this characther immortal
+         * @param yes 
+         */
+        public SetImmortality(yes: boolean): void {
+            const cqiNo = this.CqiNo
+            cm.suppress_immortality(cqiNo, !yes)
         }
 
         /**
