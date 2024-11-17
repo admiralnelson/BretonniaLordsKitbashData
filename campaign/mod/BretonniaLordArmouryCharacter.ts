@@ -570,9 +570,15 @@ namespace BretonniaLordArmoury {
         /**
          * Kills this character. WARNING: this can render methods of this object to be invalid!
          * @param destroyTroop destroy the troop too? (for general/lord only)
+         * @param permanentlyKillAsFactionLeader set this to true to erase the lord from its family member (see mixu LL script)
          */
-        public Kill(destroyTroop: boolean = false) {
-            cm.kill_character_and_commanded_unit(cm.char_lookup_str(this.GetInternalInterface()), destroyTroop)
+        public Kill(destroyTroop: boolean = false, permanentlyKillAsFactionLeader = false) {
+            if(!permanentlyKillAsFactionLeader)
+                cm.kill_character_and_commanded_unit(cm.char_lookup_str(this.GetInternalInterface()), destroyTroop)
+            else {
+                this.SetImmortality(false)
+                cm.kill_character_and_commanded_unit("family_member_cqi:" + this.CqiNo.toString(), destroyTroop)
+            }
         }
 
         /**

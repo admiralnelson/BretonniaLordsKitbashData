@@ -237,7 +237,7 @@ namespace BretonniaLordArmoury {
                     }, 600)
                     setTimeout( () => {
                         factionLeader.SetImmortality(false)
-                        factionLeader.Kill(true)
+                        factionLeader.Kill(true, true)
                         theLordHimself.SetImmortality(true)
 
                         //special for Chilfroy:
