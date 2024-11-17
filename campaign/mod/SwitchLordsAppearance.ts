@@ -117,7 +117,12 @@ namespace BretonniaLordArmoury {
         
     
     function IsMixuLordModsInstalled() : boolean {
-        return false
+        const globals : { [key: string] : unknown } = globalThis
+        const isMixuVariablesDefined = globals["mixu_ll"] != null
+        const isMixuFileExists = IsFileExistVFS("script/campaign/mod/!mixu_ll_global_functions.lua")
+
+        return isMixuFileExists || isMixuVariablesDefined
+
     }
 
     function DiversifyBretonnianLords() {
