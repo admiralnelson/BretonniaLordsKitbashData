@@ -1,6 +1,6 @@
 namespace BretonniaLordArmoury {
 
-    const FactionLogger = new Logger("BretonniaLordArmoury FactionLogger")
+    const FactionLogger = new Logger("BretonniaInGameKitbash FactionLogger")
 
     /**
      * Gets all the faction in the campaign. If this fires for the first time, it will take time to caches first.
@@ -38,13 +38,13 @@ namespace BretonniaLordArmoury {
                 const factions = theWorld.faction_list()
                 for (let i = 0; i < factions.num_items(); i++) {
                     const theFaction = factions.item_at(i)
-                    Faction.CachedFactions.push(new Faction(theFaction))
+                    Faction.CachedFactions.push(new Faction(theFaction.name()))
                 }
             }
             return Faction.CachedFactions
         }
 
-        private factionInterface: IFactionScript
+        private factionKey: string = ""
 
         /**
          * Wraps IFactionScript object into Faction object so you can manipulate and query this faction with OOP style (no need to touch cm API again)  
@@ -52,12 +52,17 @@ namespace BretonniaLordArmoury {
          * @param faction IFactionScript
          * @throws execption if the user puts invalid IFactionScript object (i.e if it's INullScript)
          */
-        private constructor(faction: IFactionScript) {
-            this.factionInterface = faction
-            if(this.factionInterface.is_null_interface()) {
-                FactionLogger.LogError(`the faction interface is null interface!`)
-                throw(`the faction interface is null interface!`)
+        private constructor(faction: IFactionScript | string) {
+            if(typeof(faction) == "string") {
+                this.factionKey = faction
+            } else {
+                if(faction.is_null_interface()) {
+                    FactionLogger.LogError(`the faction interface is null interface!`)
+                    throw(`the faction interface is null interface!`)
+                }
+                this.factionKey = faction.name()
             }
+
         }
 
         /**
@@ -271,6 +276,10 @@ namespace BretonniaLordArmoury {
         */
         public IsEqual(otherFaction: Faction) {
             return this.FactionKey == otherFaction.FactionKey
+        }
+
+        public get factionInterface() : IFactionScript {
+            return cm.get_faction(this.factionKey)
         }
     }
 }
