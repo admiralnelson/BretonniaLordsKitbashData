@@ -220,7 +220,40 @@
         "PreferencedItems": []
         
 
+    },
+
+    {
+        "ItemName": "admiralnelson_pilgrim_gorget_pauldrons_item_key",
+        "SubtypeKeys": [
+            "admiralnelson_bret_lord_massif_agent_key", 
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key",
+            "admiralnelson_bret_lord_massif_agent_key_1",
+            "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
+        ],
+        "LocalisedName": "Pilgrim's Gorget",
+        "Description": "A sturdy gorget worn by devout Battle Pilgrims, offering modest protection while serving as a symbol of steadfast faith.",
+        "Type": "pauldrons", 
+        "IsItemDefinedFromAncillary": true,
+        "AssociatedAncillaryKey": "admiralnelson_pilgrim_gorget_pauldrons_item_key",
+        "AssociatedWithArmouryItemSet": null,
+        "Skeleton": "humanoid01c",
+        "ItemCategory": "common",
+        "UiIcon": "assets/icons/base_items/admiralnelson_pilgrim_gorget_pauldrons_item_key.png",
+        "Thumbnail": null,
+        "UnitCardThumbnail": null,
+        "VariantMesh": "variantmeshes\\armour_pauldrons\\massif_pilgrim_pauldron\\massif_pilgrim_pauldron.wsmodel",
+        "VariantMeshDefinitionShouldCreate": true,
+        "VariantMeshScale": 1,
+        "VariantMeshMountScale": 1,
+        "BattleAnimation": null,
+        "CampaignAnimation": null,
+        "OnlyCompatibleWithItem": null,
+        "AudioType": "audio_armour_type:plate",
+        "PreferencedItems": []
+        
+
     }
+    
     
 
 ]

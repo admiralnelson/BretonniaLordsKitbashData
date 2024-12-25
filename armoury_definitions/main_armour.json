@@ -266,7 +266,7 @@
             "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
         "LocalisedName": "The Gliterring Scales",
-        "Description": "",
+        "Description": "Such is the shine upon every scale in this resplendent mail that the foe can't help but be dazzled.",
         "Type": "torso", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "wh_main_anc_armour_glittering_scales",
