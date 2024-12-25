@@ -308,7 +308,7 @@
         "AssociatedWithArmouryItemSet": null,
         "Skeleton": "humanoid01c",
         "ItemCategory": "common",
-        "UiIcon": "assets/icons/base_items/normal_admiralnelson_questing_knight_tabard_item_key.png",
+        "UiIcon": "assets/icons/normal_base_items/normal_admiralnelson_questing_knight_tabard_item_key.png",
         "Thumbnail": null,
         "UnitCardThumbnail": null,
         "VariantMesh": "variantmeshes\\armour_torso\\normal_tabard_of_questing_knight\\normal_tabard_of_questing_knight.wsmodel",
