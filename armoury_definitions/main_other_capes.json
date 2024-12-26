@@ -7,8 +7,8 @@
             "admiralnelson_bret_lord_massif_agent_key_1",
             "admiralnelson_bret_lord_massif_sword_shield_agent_key_1"
         ],
-        "LocalisedName": "The Paladin Cape",
-        "Description": "None",
+        "LocalisedName": "Paladin Cape",
+        "Description": "A finely crafted cape worn by the noble Paladins of Bretonnia, symbolizing their unwavering dedication and valor in battle.",
         "Type": "cape", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_paladin_cape_item_key",

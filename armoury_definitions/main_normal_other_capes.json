@@ -7,8 +7,8 @@
             "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
-        "LocalisedName": "The Paladin Cape",
-        "Description": "None",
+        "LocalisedName": "Paladin Cape",
+        "Description": "A finely crafted cape worn by the noble Paladins of Bretonnia, symbolizing their unwavering dedication and valor in battle.",
         "Type": "cape", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_paladin_cape_item_key",
@@ -40,7 +40,7 @@
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
         "LocalisedName": "Count Bernard's Cape",
-        "Description": "None",
+        "Description": "Crafted from the wild and untamed mane of a beast long forgotten, this rugged cape once adorned the shoulders of the fearsome Grail Knight, Count Bernard. Its fur is thick and unyielding, offering both protection and a constant reminder of the Count's unwavering resolve and relentless ferocity in battle.",
         "Type": "cape", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_legacy_cape_item_key",
@@ -71,8 +71,8 @@
             "admiralnelson_wh_main_brt_lord_agent_key_1",
             "admiralnelson_bret_lord_2handed_agent_key_1"
         ],
-        "LocalisedName": "The Grail Knight Cape I",
-        "Description": "None",
+        "LocalisedName": "The Cape of the Grail's Grace",
+        "Description": "This ornate cape, adorned with delicate floral patterns and bordered by a cross pattern symbolizing the Grail's holy purpose, was once worn by a revered Grail Knight.",
         "Type": "cape", 
         "IsItemDefinedFromAncillary": true,
         "AssociatedAncillaryKey": "admiralnelson_grail_knight_cape_item_key",
