@@ -125,6 +125,14 @@ namespace BretonniaLordArmoury {
 
     }
 
+    function IsDukeOfBretonniaInstalled() : boolean {
+        const globals : { [key: string] : unknown } = globalThis
+        const isDukeVariablesDefined = globals["ubr_brt_dukes_spawn_enemies"] != null
+        const isDukeFileExists = IsFileExistVFS("script/campaign/mod/ubr_brt_dukes_start_enemies.lua")
+
+        return isDukeFileExists || isDukeVariablesDefined
+    }
+
     function DiversifyBretonnianLords() {
 
         console.warn("DiversifyBretonnianLords is loaded")
@@ -132,6 +140,12 @@ namespace BretonniaLordArmoury {
         if(IsMixuLordModsInstalled()) {
             console.warn("Mixu lords is installed, aborting")
             console.warn("Maybe we should implement Mixu Bretonnian lords with our armoury system?")
+            return
+        }
+
+        if(IsDukeOfBretonniaInstalled()) {
+            console.warn("Duke of Bretonnia is installed, aborting")
+            console.warn("Maybe we should implement Duke of Bretonnia lords with our armoury system?")
             return
         }
 
